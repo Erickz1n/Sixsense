@@ -34,6 +34,8 @@ header {
     position: fixed;
 
     z-index: 999;
+    display: flex;
+    justify-content: center;
 }
 
 header nav {
@@ -45,8 +47,9 @@ header nav {
 
 header nav ul{
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     list-style: none;
+    
 }
 
 header nav ul li .nav{
@@ -55,6 +58,10 @@ header nav ul li .nav{
     text-decoration: none;
     
     transition: color .3s;
+}
+
+nav .logo {
+    width: 15rem;
 }
 
 nav ul li .nav {
@@ -777,7 +784,7 @@ header nav ul li .instagram {
 
 .back-to-top {
     background-color: var(--base-color);
-    color: #fff;
+    color: #000;
 
     position: fixed; 
     right: 2rem;
@@ -786,7 +793,7 @@ header nav ul li .instagram {
     padding: 2rem;
     clip-path: circle();
 
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 0;
 
     visibility: hidden;
@@ -802,11 +809,13 @@ header nav ul li .instagram {
     transform: translateY(0);
 }
 
-/* CSS base para telas grandes */
-  /* ...resto do CSS base */
-  /* Media query para telas menores */
-    @media (max-width: 430px) {
+@media (max-width: 430px) {
     /* HEADER E NAV */
+
+    .back-to-top {
+        padding: 1rem;
+        font-size: 1rem;
+    }
 
     .section{
         height: 50rem;
@@ -823,28 +832,147 @@ header nav ul li .instagram {
     }
 
 
-    header {
-        max-width: 100%;
+    #header {
+        margin-bottom: 2rem;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: var(--background-color-black);
     }
 
+    #header.scroll {
+        transition: 0.2s;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    }
 
+    nav.container {
+        padding: 2rem 1rem;
+    }
+
+    nav {
+        width: 100%;
+        height: var(--header-height);
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        transition: 0.2s;
+        position: relative;
+    }
+
+    nav ul li a:hover, 
+    nav ul li a.active {
+        color: var(--base-color);
+    }
+
+    nav ul li a::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: var(--base-color);
+
+        position: absolute;
+        left: 0;
+        bottom: -1.5rem;
+
+        transition: width 0.2s;
+    }
+
+    nav .menu {
+        opacity: 0;
+        visibility: hidden;
+        top: -20rem;
+        transition: 0.2s;
+    }
+
+    nav ul li a:hover::after,
+    nav ul li a.active::after {
+    width: 100%;
+    }
+    
+    nav .menu ul {
+        display: none;
+    }
+    
+    /* Mostrar menu */
+    nav.show .menu {
+        opacity: 1;
+        visibility: visible;
+    
+        background: var(--background-color-black);
+        height: 100vh;
+        width: 100vw;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+        display: grid;
+        place-content: center;
+    }
+    
+    nav.show .menu ul {
+        display: grid;
+    }
+    
+    nav.show ul.grid {
+        gap: 4rem;
+    }
+
+    .toggle {
+        color: var(--base-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    nav .icon-close {
+        visibility: visible;
+        opacity: 0;
+    
+        position: absolute;
+        top: -1.5rem;
+        right: 1.5rem;
+    
+        transition: 0.2s;
+    }
+    
+    nav.show div.icon-close {
+        visibility: visible;
+        opacity: 1;
+        top: 1.5rem
+    }
 
     header nav ul{
         display: none;
     }
 
     header nav .logo{
-        display: flex;
-        flex-direction: row;
+        /* display: flex; */
+        /* flex-direction: row; */
         justify-content: start;
         width: 10rem;
     }
 
+    header {
+        padding: 0 2rem;
+    }
+
     #home {
         padding: 1rem 0;
+        overflow: hidden;
+
     }
 
     #home .text h1 {
