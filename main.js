@@ -120,7 +120,7 @@ controls3.forEach(control3 => {
 
 const scrollReveal = ScrollReveal({
     origin: 'top',
-    distance: '38px',
+    distance: '20px',
     duration: 700,
     reset: true
 })

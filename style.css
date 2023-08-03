@@ -43,6 +43,7 @@ header nav {
     justify-content: space-between;
     padding: 1rem 20rem;
     align-items: center;
+    gap: 4rem;
 }
 
 header nav ul{
@@ -943,7 +944,7 @@ header nav ul li .instagram {
     
         position: absolute;
         top: -1.5rem;
-        right: 1.5rem;
+        right: 3rem;
     
         transition: 0.2s;
     }
@@ -967,6 +968,10 @@ header nav ul li .instagram {
 
     header {
         padding: 0 2rem;
+    }
+
+    header nav ul li a{
+        font-size: 3rem;
     }
 
     #home {
