@@ -805,7 +805,7 @@ header nav ul li .instagram {
 /* CSS base para telas grandes */
   /* ...resto do CSS base */
   /* Media query para telas menores */
-    @media (max-width: 380px) {
+    @media (max-width: 430px) {
     /* HEADER E NAV */
 
     .section{
