@@ -1,0 +1,1621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --hue: 120;
+
+    --base-color: hsl(104, 100%, 50%);
+    --background-color-black: hsl(0, 0%, 0%) ;
+
+    font-family: 'Sora', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: 68rem;
+}
+
+/* HEADER E NAV */
+
+header {
+    width: 100%;
+    background-color: #000000;
+    position: fixed;
+
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 20rem;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+header nav ul li .nav{
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    
+    transition: color .3s;
+}
+
+nav ul li .nav {
+    position: relative;
+}
+
+header nav ul li .nav.active {
+    color: hsl(104, 100%, 50%);
+}
+
+header nav ul li .nav::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--base-color);
+
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+
+    transition: width 0.2s ease-in-out;
+}
+
+header nav ul li .nav:hover::after,
+nav ul li .nav.active::after{
+    width: 100%;
+}
+
+header nav ul li .instagram {
+    color: #000;
+    padding: .5rem 2rem;
+    background: var(--base-color);
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* SECTION HOME */
+
+#home {
+    color: #ffffff;
+    background-color: #000000;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10rem 40rem;
+}
+
+#home .text {
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+#home .text h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+#home .text p {
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    margin-bottom: 6rem;
+}
+
+#home .text .link a {
+    background: var(--base-color);
+    color: #000;
+    padding: 1.6rem 4.6rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    width: 24rem;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+#home .text .link a:hover {
+    background: #fff;
+}
+
+/* SECTION WHY */
+
+#why {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 14rem;
+}
+
+#why .text {
+    width: 44.9rem;
+}
+
+#why .arrow {
+    margin-left: .5rem;
+}
+
+#why .text h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+#why .text h1 span {
+    color: var(--base-color);
+}
+
+#why .square  {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#why .square input {
+    font-family: 'Sora', sans-serif;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#why .square {
+    width: 40.9rem;
+    height: 40.9rem;
+    padding: 5.3rem;
+}
+
+#why input {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    margin-top: 3.2rem;
+    background-color: var(--base-color);
+    padding: 1.6rem 11.6rem ;
+    border: none;
+
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+#why input:hover {
+    color: #fff;
+    background: #000;
+}
+
+/* SECTION SERVICES */
+
+#services {
+    background: url(./assets/third-background.png) no-repeat top center/cover; 
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5.4rem;
+}
+
+#services .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #fff;
+    gap: 1.2rem;
+}
+
+#services .text h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+#services .text p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#services .cards-services {
+    display: grid;
+    grid-template-areas: 
+    "A B"
+    "C D";
+    gap: 2.3rem;
+}
+
+#services .cards-services .card{
+    transition: all .2s ease-in-out;
+}
+
+
+#services .card {
+    padding: 1.8rem 6.2rem;
+    background: var(--base-color);
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    
+    transition: all .2s ease-in-out;
+    
+}
+#services .cards-services .card:hover {
+    background: #fff;
+}
+
+/* SECTION PUBLIC */
+
+#public {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 68rem;
+}
+
+#public h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem ;
+    width: 61.5rem;
+}
+
+#public h1 span {
+    color: var(--base-color);
+}
+
+#public .clients {
+    display: flex;
+    color: #fff;
+    gap: 2.4rem;
+    margin-bottom: 4rem;
+    z-index: -1;
+}
+
+#public .icons {
+    position: relative;
+    top: 2.5rem;
+    display: flex;
+    gap: 23.5rem;
+}
+
+.house, .bag, .wifi {
+    background-color: #000;
+    padding: .9rem 1.5rem;
+}
+
+.company, .entrepreneurs, .influencers {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+    background: #000;
+    width: 27rem;
+    padding: 5.8rem 3.1rem;
+}
+
+.clients h3 {
+    color: var(--base-color);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.clients p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#public a {
+    padding: 1.6rem 4.6rem;
+    width: 24rem;
+    background: var(--base-color);
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000;
+
+    transition: all .2s ease-in-out;
+}
+
+#public a:hover {
+    color: #fff;
+    background: #000;
+}
+
+/*  SECTION METHOD */
+
+#method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #000;
+    padding: 13.6rem 0;
+}
+
+#method h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    
+    margin-bottom: 5rem;
+}
+
+
+
+#method .method-wrapper .method-text {
+    color: #fff;
+    display: flex;
+    gap: 40rem;
+}
+
+#method .method-wrapper {
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 29rem;
+    position: absolute;
+    font-size: 1.4rem;
+}
+
+
+
+/* SECTION PORTIFOLIO */
+
+#portifolio {
+    background: #000;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5rem;
+}
+
+#portifolio .client {
+    color: #fff;
+
+    font-size: 3rem;
+    font-weight: 700;
+    /* width: 130rem; */
+}
+
+#portifolio .line {
+    background: var(--base-color);
+
+    height: .6rem;
+    width: 29.7rem;
+
+    margin: 6rem;
+}
+
+#portifolio .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.2rem;
+    margin-top: 1.6rem;
+}
+
+#portifolio .text h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+#portifolio .text p {
+    color: #fff;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+#portifolio a {
+    color: #000;
+    text-decoration: none;
+    background: var(--base-color);
+
+    width: 24rem;
+    padding: 1.6rem 4.6rem;
+    margin-bottom: 16rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition: all .2s ease-in-out;
+}
+
+#portifolio a:hover {
+    background: #fff;
+}
+
+
+/* SLIDER 1 */
+
+
+.container-swiper-1 {
+    position: relative;
+    padding: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-wrapper-1 {
+    overflow-x: auto;
+}
+
+.gallery-1 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5rem;
+}
+
+.arrow-left-1,
+.arrow-right-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+
+    font-size: 2rem;
+    line-height: 25rem;
+    width: 4rem;
+
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.6;
+
+
+    transition: all 300ms ease-in-out;
+}
+
+.arrow-right-1 {
+    left: auto;
+    right: 0;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left-1:hover,
+.arrow-right-1:hover {
+    opacity: 1;
+}
+
+.item-1 {
+    width: 25rem;
+    height: 25rem;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 300ms ease-in-out;
+}
+
+.current-item-1 {
+    opacity: 1;
+}
+
+.gallery-wrapper-1::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrapper-1 {
+    -ms-overflow-style: none;
+
+    scrollbar-width: none;
+}
+
+/* SLIDER 2 */
+
+.container-swiper-2 {
+    position: relative;
+    padding: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-wrapper-2 {
+    overflow-x: auto;
+}
+
+.gallery-2 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5rem;
+}
+
+.arrow-left-2,
+.arrow-right-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 4rem;
+    line-height: 25rem;
+    width: 4rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.3;
+    transition: all 300ms ease-in-out;
+}
+
+.arrow-right-2 {
+    left: auto;
+    right: 0;
+    text-align: right;
+
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left-2:hover,
+.arrow-right-2:hover {
+    opacity: 1;
+}
+
+.item-2 {
+    width: 25rem;
+    height: 25rem;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 300ms ease-in-out;
+}
+
+.current-item-2 {
+    opacity: 1;
+}
+
+.gallery-wrapper-2::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrapper-2{
+    -ms-overflow-style: none;
+
+    scrollbar-width: none;
+}
+
+/* SLIDER 3 */
+
+.container-swiper-3 {
+    position: relative;
+    padding: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-wrapper-3 {
+    overflow-x: auto;
+}
+
+.gallery-3 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5rem;
+}
+
+.arrow-left-3,
+.arrow-right-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 4rem;
+    line-height: 25rem;
+    width: 4rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.3;
+    transition: all 300ms ease-in-out;
+}
+
+.arrow-right-3 {
+    left: auto;
+    right: 0;
+    text-align: right;
+
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left-3:hover,
+.arrow-right-3:hover {
+    opacity: 1;
+}
+
+.item-3 {
+    width: 25rem;
+    height: 25rem;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 300ms ease-in-out;
+}
+
+.current-item-3 {
+    opacity: 1;
+}
+
+.gallery-wrapper-3::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrapper-3{
+    -ms-overflow-style: none;
+
+    scrollbar-width: none;
+}
+
+
+/* SECTION ABOUT */
+
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--base-color);
+    padding: 17.4rem 71rem;
+}
+
+#about .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+}
+
+#about .text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+}
+
+#about h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    width: 45rem;
+}
+
+#about p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 40rem;
+}
+
+#about a {
+    color: #000;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    width: 24rem;
+    padding: 1.6rem 4.6rem ;
+
+    background: #fff;
+    transition: all .2s ease-in-out;
+}
+
+#about a:hover {
+    color: #fff;
+    background: #000;
+}
+
+
+
+/* BACK TO TOP */
+
+.back-to-top {
+    background-color: var(--base-color);
+    color: #fff;
+
+    position: fixed; 
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 0.5rem;
+    clip-path: circle();
+
+    font-size: 1.5rem;
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CSS base para telas grandes */
+  /* ...resto do CSS base */
+  /* Media query para telas menores */
+    @media (max-width: 380px) {
+    /* HEADER E NAV */
+
+    .section{
+        height: 50rem;
+    }
+    
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    header {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+
+    header nav ul{
+        display: none;
+    }
+
+    header nav .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 10rem;
+    }
+
+    #home {
+        padding: 1rem 0;
+    }
+
+    #home .text h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    #home .text p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    
+        margin-bottom: 6rem;
+    }
+
+    #home .text {
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    } 
+
+    #home .text .link a {
+        background: var(--base-color);
+        color: #000;
+        padding: 1.4rem 4.4rem;
+    
+        font-size: 1rem;
+        font-weight: 700;
+    
+        text-transform: uppercase;
+        width: 15rem;
+    }
+    
+    #home .text .link a:hover {
+        background: #fff;
+    }
+
+
+    #why {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        max-width: 36rem;
+        gap: 3rem;
+        padding: 30rem 0;
+        
+    }
+
+    #why .text {
+        width: 30rem;
+    }
+    
+    #why .arrow {
+        display: none;
+    }
+    
+    #why .text h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    #why .text h1 span {
+        color: var(--base-color);
+    }
+    
+    #why .square  {
+        font-size: 1.5rem;
+        font-weight: 400;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #why .square input {
+        font-family: 'Sora', sans-serif;
+    
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+    }
+    
+    #why .square {
+        width: 5rem;
+        height: 40rem;
+        padding: 1rem;
+
+
+    }
+    
+    #why input {
+        font-size: 1.5rem;
+        font-weight: 700;
+    
+        background-color: var(--base-color);
+        padding: 1.4rem 11.4rem ;
+        border: none;
+    
+        cursor: pointer;
+    
+        transition: all .2s ease-in-out;
+    }
+    
+    #why input:hover {
+        color: #fff;
+        background: #000;
+    }
+    
+    #services {
+        background: url(./assets/third-background.png) no-repeat top center/cover; 
+    }
+    
+    #services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5.4rem;
+        max-width: 36rem;
+    }
+    
+    #services .text {
+        gap: 1.2rem;
+    }
+    
+    #services .text h1 {
+        font-size: 3rem;
+    }
+    
+    #services .text p {
+        font-size: 1.5rem;
+    }
+    
+    #services .cards-services {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+    
+    #services .cards-services .card{
+        transition: all .2s ease-in-out;
+    }
+    
+    #services .card {
+        padding: 1.2rem 5.8rem;
+        font-size: 1.2rem;
+    }
+
+    #public {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        height: 100rem;
+    }
+    
+    #public h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem ;
+        width: 61.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #public h1 span {
+        color: var(--base-color);
+    }
+    
+    #public .clients {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 1rem;
+        margin-bottom: 4rem;
+        z-index: -1;
+    }
+    
+    .house, .bag, .wifi {
+        background-color: #000;
+        padding: .5rem 1rem;
+        display: none;
+    }
+    
+    .company, .entrepreneurs, .influencers {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+    
+        background: #000;
+        width: 30rem;
+        height: auto;
+        padding: 5rem 2.5rem;
+    }
+    
+    .clients h3 {
+        color: var(--base-color);
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .clients p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    #public a {
+        align-items: center;
+        justify-content: center;
+        padding: 1.4rem 4.4rem;
+    }
+
+    #method {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        background: #000;
+        padding: 5rem 0;
+    }
+
+    #method .method {
+        width: 20rem;
+    }
+    
+    #method h1 {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        width: 30rem;
+        margin-bottom: 5rem;
+    }
+
+    #method img {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    #method .method-wrapper .method-text {
+        color: #fff;
+        display: flex;
+        gap: 15rem;
+    }
+    
+    #method .method-wrapper {
+        justify-content: center;
+        align-items: center;
+        margin-top: 15rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        position: absolute;
+        font-size: 1.4rem;
+    }
+
+    #portifolio {
+        background: #000;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        gap: 5rem;
+    }
+    
+    #portifolio .client {
+        color: #fff;
+    
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    #portifolio .line {
+        background: var(--base-color);
+    
+        height: .2rem;
+        width: 20rem;
+    
+        margin: 1rem;
+    }
+    
+    #portifolio .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        gap: 1rem;
+    }
+    
+    #portifolio .text h1 {
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    #portifolio .text p {
+        color: #fff;
+    
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    #portifolio a {
+        background: var(--base-color);
+        width: 24rem;
+        padding: 1.6rem 4.6rem;
+        font-size: 1.2rem;
+    }
+
+        /* SLIDERS */
+        .container-swiper-1 .item-1,
+        .container-swiper-2 .item-2,
+        .container-swiper-3 .item-3 {
+          width: 100%; /* Alterando o tamanho dos itens para preencher a largura do slider */
+          height: auto; /* Permitindo que a altura dos itens se ajuste automaticamente ao conteúdo */
+        }
+    
+        .arrow-left-1,
+        .arrow-right-1,
+        .arrow-left-2,
+        .arrow-right-2,
+        .arrow-left-3,
+        .arrow-right-3 {
+          font-size: 2rem; /* Reduzindo o tamanho das setas dos sliders */
+          line-height: 3rem; /* Ajustando a altura das setas para alinhar verticalmente */
+          width: 3rem; /* Reduzindo a largura das setas dos sliders */
+        }
+    
+        .arrow-left-1 {
+          left: 1rem; /* Ajustando a posição das setas esquerdas */
+        }
+    
+        .arrow-right-1 {
+          right: 1rem; /* Ajustando a posição das setas direitas */
+        }
+    
+        .arrow-left-2 {
+          left: 1rem; /* Ajustando a posição das setas esquerdas */
+        }
+    
+        .arrow-right-2 {
+          right: 1rem; /* Ajustando a posição das setas direitas */
+        }
+    
+        .arrow-left-3 {
+          left: 1rem; /* Ajustando a posição das setas esquerdas */
+        }
+    
+        .arrow-right-3 {
+          right: 1rem; /* Ajustando a posição das setas direitas */
+        }
+    
+        /* SECTION ABOUT */
+        #about {
+            flex-direction: column; /* Mudar para layout vertical */
+            align-items: center;
+            justify-content: center;
+            padding: 5rem; /* Reduzir o espaçamento para um layout mais compacto */
+        }
+        
+        #about .about {
+            text-align: center; /* Centralizar o texto */
+        }
+        
+        
+        #about .mac img{
+            width: 30rem;
+        }
+
+        #about .text {
+            align-items: center; /* Centralizar o texto */
+            width: 30rem;
+        }
+
+        #about .text h1 {
+            font-size: 3rem;
+        }
+
+        #about .text p {
+            font-size: 1.5rem;
+            width: 30rem;
+        }
+    
+        /* ... Mais ajustes de tamanho de texto, layout e elementos para telas menores, se necessário */
+}
+
+
+
+
+
+
+
+/* 
+@media (max-width: 380px) {
+
+    :root {
+
+    }
+
+    .section{
+        height: 50rem;
+    }
+    
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        max-width: 380px;
+    }
+    header nav{
+        max-width: 3rem;
+    }
+    header nav {
+    }
+
+    #home .text h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    #home .text p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    
+        margin-bottom: 6rem;
+    }
+
+    #home .text {
+        width: 34rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    #home .text .link a {
+        background: var(--base-color);
+        color: #000;
+        padding: 1.4rem 4.4rem;
+    
+        font-size: 1rem;
+        font-weight: 700;
+    
+        text-transform: uppercase;
+        width: 15rem;
+    }
+    
+    #home .text .link a:hover {
+        background: #fff;
+    }
+
+
+    #why {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        max-width: 36rem;
+        gap: 3rem;
+        padding: 20rem 0;
+    }
+
+    #why .text {
+        width: 30rem;
+    }
+    
+    #why .arrow {
+        display: none;
+    }
+    
+    #why .text h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    #why .text h1 span {
+        color: var(--base-color);
+    }
+    
+    #why .square  {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    #why .square input {
+        font-family: 'Sora', sans-serif;
+    
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    #why .square {
+        width: 10.9rem;
+        height: 30rem;
+        padding: 1rem;
+    }
+    
+    #why input {
+        font-size: 1rem;
+        font-weight: 700;
+    
+        background-color: var(--base-color);
+        padding: 1.4rem 11.4rem ;
+        border: none;
+    
+        cursor: pointer;
+    
+        transition: all .2s ease-in-out;
+    }
+    
+    #why input:hover {
+        color: #fff;
+        background: #000;
+    }
+    
+
+
+
+    #services {
+        background: url(./assets/third-background.png) no-repeat top center/cover; 
+    }
+    
+    #services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5.4rem;
+        max-width: 36rem;
+    }
+    
+    #services .text {
+        gap: 1.2rem;
+    }
+    
+    #services .text h1 {
+        font-size: 3rem;
+    }
+    
+    #services .text p {
+        font-size: 1.2rem;
+    }
+    
+    #services .cards-services {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+    
+    #services .cards-services .card{
+        transition: all .2s ease-in-out;
+    }
+    
+    #services .card {
+        padding: 1.2rem 5.8rem;
+        font-size: 1.2rem;
+    }
+
+    #public {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        height: 80rem;
+    }
+    
+    #public h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem ;
+        width: 61.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #public h1 span {
+        color: var(--base-color);
+    }
+    
+    #public .clients {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        gap: 1rem;
+        margin-bottom: 4rem;
+        z-index: -1;
+    }
+    
+    .house, .bag, .wifi {
+        background-color: #000;
+        padding: .5rem 1rem;
+        display: none;
+    }
+    
+    .company, .entrepreneurs, .influencers {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+    
+        background: #000;
+        width: 24rem;
+        padding: 5rem 2.5rem;
+    }
+    
+    .clients h3 {
+        color: var(--base-color);
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .clients p {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    #public a {
+        align-items: center;
+        justify-content: center;
+        padding: 1.4rem 4.4rem;
+    }
+
+    #method {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        background: #000;
+        padding: 5rem 0;
+    }
+    
+    #method h1 {
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        width: 20rem;
+        margin-bottom: 5rem;
+    }
+
+    #method img {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    #portifolio {
+        background: #000;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        gap: 5rem;
+    }
+    
+    #portifolio .client {
+        color: #fff;
+    
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    #portifolio .line {
+        background: var(--base-color);
+    
+        height: .2rem;
+        width: 20rem;
+    
+        margin: 1rem;
+    }
+    
+    #portifolio .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        gap: 1rem;
+    }
+    
+    #portifolio .text h1 {
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    #portifolio .text p {
+        color: #fff;
+    
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    #portifolio a {
+        background: var(--base-color);
+        width: 24rem;
+        padding: 1.6rem 4.6rem;
+        font-size: 1.2rem;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--base-color);
+        max-width: 36rem;
+        padding: 17.4rem 71rem;
+    }
+    
+    #about .about {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    #about .text {
+        display: flex;
+        flex-direction: column;
+        gap: 3.1rem;
+    }
+    
+    #about h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        width: 45rem;
+    }
+    
+    #about p {
+        font-size: 1rem;
+        font-weight: 400;
+        width: 40rem;
+    }
+    
+    #about a {
+        color: #000;
+    
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 700;
+        width: 24rem;
+        padding: 1.6rem 4.6rem ;
+    
+        background: #fff;
+        transition: all .2s ease-in-out;
+    }
+    
+    #about .mac{
+        width: 10rem;
+        height: 10rem;
+    }
+} */
