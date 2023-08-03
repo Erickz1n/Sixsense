@@ -892,7 +892,7 @@ header nav ul li .instagram {
         
         max-width: 36rem;
         gap: 3rem;
-        padding: 30rem 10rem;
+        padding: 30rem 0;
         
     }
 
@@ -966,6 +966,7 @@ header nav ul li .instagram {
         align-items: center;
         justify-content: center;
         gap: 5.4rem;
+        padding: 0;
     }
     
     #services .text {
