@@ -892,7 +892,7 @@ header nav ul li .instagram {
         
         max-width: 36rem;
         gap: 3rem;
-        padding: 30rem 0;
+        padding: 30rem 10rem;
         
     }
 
@@ -928,6 +928,7 @@ header nav ul li .instagram {
         text-transform: uppercase;
         
     }
+
     
     #why .square {
         width: 5rem;
@@ -965,7 +966,6 @@ header nav ul li .instagram {
         align-items: center;
         justify-content: center;
         gap: 5.4rem;
-        max-width: 36rem;
     }
     
     #services .text {
