@@ -202,13 +202,19 @@ header nav ul li .instagram {
 }
 
 #why .square {
+    display: flex;
+    flex-direction: column;
     width: 40.9rem;
     height: 40.9rem;
-    padding: 5.3rem;
-}
+    padding: 5rem;
+    border: 1px solid hsla(0, 0%, 0%, 0.259);
+} 
 
-#why input {
+#why .square-button {
+    color: #000;
+    text-decoration: none;
     font-size: 1.2rem;
+    text-transform: uppercase;
     font-weight: 700;
 
     margin-top: 3.2rem;
@@ -1068,13 +1074,15 @@ header nav ul li .instagram {
     }
     
     #why .square  {
+        width: 40rem;
         font-size: 1.5rem;
         font-weight: 400;
         align-items: center;
         justify-content: center;
+        padding: 2rem;
     }
     
-    #why .square input {
+    #why .square a {
         font-family: 'Sora', sans-serif;
     
         font-size: 1.5rem;
@@ -1085,9 +1093,9 @@ header nav ul li .instagram {
 
     
     #why .square {
-        width: 5rem;
+        /* width: 5rem; */
         height: 40rem;
-        padding: 1rem;
+        padding: 2rem;
 
 
     }

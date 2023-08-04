@@ -120,13 +120,13 @@ controls3.forEach(control3 => {
 
 const scrollReveal = ScrollReveal({
     origin: 'top',
-    distance: '20px',
+    distance: '40px',
     duration: 700,
     reset: true
 })
 
 scrollReveal.reveal(
-    `#home .text, #home .link, #why .text, #why fieldset,
+    `#home .text, #home .link, #why .text, #why .square,
     #services .text, #services .card, #public .text, #public h1, 
     #public .icons, #public .clients, #public a, #method h1, #method .method, #method .method-wrapper,
     #portifolio .line, #portifolio .text, #portifolio h1, .gallery-1, .gallery-2, .gallery-3, 
