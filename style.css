@@ -36,6 +36,8 @@ header {
     z-index: 999;
     display: flex;
     justify-content: center;
+
+    
 }
 
 header nav {
@@ -73,6 +75,8 @@ header nav ul li .nav.active {
     color: hsl(104, 100%, 50%);
 }
 
+
+
 header nav ul li .nav::after {
     content: '';
     width: 0%;
@@ -102,10 +106,10 @@ header nav ul li .instagram {
 }
 
 
-.container {
+/* .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-}
+} */
 
 /* SECTION HOME */
 
@@ -794,7 +798,7 @@ header nav ul li .instagram {
     padding: 2rem;
     clip-path: circle();
 
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 0;
 
     visibility: hidden;
@@ -949,6 +953,20 @@ header nav ul li .instagram {
         transition: 0.2s;
         margin-top: 1rem;
     }
+
+
+    .section {
+        height: 70rem;
+    }
+    
+    .icon-menu, .icon-close {
+        font-size: 3rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+    }
     
     nav.show div.icon-close {
         visibility: visible;
@@ -971,7 +989,11 @@ header nav ul li .instagram {
         padding: 0 2rem;
     }
 
-    header nav ul li a{
+    header nav ul li .nav{
+        font-size: 3rem;
+    }
+
+    header nav ul li .instagram{
         font-size: 3rem;
     }
 
@@ -1373,6 +1395,8 @@ header nav ul li .instagram {
             font-size: 1.5rem;
             width: 30rem;
         }
+
+
     
         /* ... Mais ajustes de tamanho de texto, layout e elementos para telas menores, se necessário */
 }
