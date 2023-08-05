@@ -801,10 +801,10 @@ header nav ul li .instagram {
     right: 2rem;
     bottom: 2rem;
 
-    padding: 2rem;
+    padding: 1rem;
     clip-path: circle();
 
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 0;
 
     visibility: hidden;
@@ -812,6 +812,8 @@ header nav ul li .instagram {
 
     transition: 0.3s;
     transform: translateY(100%);
+    text-decoration: none;
+
 }
 
 .back-to-top.show {
@@ -825,7 +827,7 @@ header nav ul li .instagram {
 
     .back-to-top {
         padding: 1rem;
-        font-size: 1rem;
+        font-size: 3rem;
     }
 
     .section{
@@ -962,7 +964,7 @@ header nav ul li .instagram {
 
 
     .section {
-        height: 70rem;
+        /* height: 70rem; */
     }
     
     .icon-menu, .icon-close {
@@ -1074,12 +1076,13 @@ header nav ul li .instagram {
     }
     
     #why .square  {
-        width: 40rem;
+        display: flex;
+        width: 35rem;
         font-size: 1.5rem;
         font-weight: 400;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
+        padding: 1rem;
     }
     
     #why .square a {
@@ -1095,7 +1098,7 @@ header nav ul li .instagram {
     #why .square {
         /* width: 5rem; */
         height: 40rem;
-        padding: 2rem;
+        padding: 1rem;
 
 
     }
@@ -1166,7 +1169,12 @@ header nav ul li .instagram {
         align-items: center;
         justify-content: center;
     
-        height: 100rem;
+        /* height: 100rem; */
+        /* padding: 45rem 0; */
+    }
+
+    .section {
+        padding: 45rem 0;
     }
     
     #public h1 {
