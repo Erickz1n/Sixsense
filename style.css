@@ -17,6 +17,18 @@
     font-family: 'Sora', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2c2c31;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--base-color);
+}
+
 html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -38,6 +50,8 @@ header {
     justify-content: center;
 
     height: 8rem;
+
+    animation: top-down .3s ease-in;
 }
 
 header nav {
@@ -105,6 +119,18 @@ header nav ul li .instagram {
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
+}
+
+@keyframes top-down{
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -190,12 +216,13 @@ header nav ul li .instagram {
     color: var(--base-color);
 }
 
-#why .square  {
+#why .square p{
+    color: #000;
     font-size: 1.4rem;
     font-weight: 400;
 }
 
-#why .square input {
+#why .square a {
     font-family: 'Sora', sans-serif;
 
     font-size: 1.2rem;
@@ -212,12 +239,14 @@ header nav ul li .instagram {
     border: 1px solid hsla(0, 0%, 0%, 0.259);
 } 
 
-#why .square-button {
+#why a {
     color: #000;
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 700;
+    line-height: normal;
+
 
     margin-top: 3.2rem;
     background-color: var(--base-color);
@@ -229,7 +258,7 @@ header nav ul li .instagram {
     transition: all .2s ease-in-out;
 }
 
-#why input:hover {
+#why a:hover {
     color: #fff;
     background: #000;
 }
@@ -298,6 +327,7 @@ header nav ul li .instagram {
     transition: all .2s ease-in-out;
     
 }
+
 #services .cards-services .card:hover {
     background: #fff;
 }
@@ -449,7 +479,7 @@ header nav ul li .instagram {
 
     font-size: 3rem;
     font-weight: 700;
-    /* width: 130rem; */
+    width: 130rem;
 }
 
 #portifolio .line {
@@ -685,9 +715,9 @@ header nav ul li .instagram {
     left: 0;
     right: auto;
     bottom: 0;
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 25rem;
-    width: 2rem;
+    width: 4rem;
     text-align: center;
     color: #fff;
     cursor: pointer;
@@ -744,7 +774,7 @@ header nav ul li .instagram {
     justify-content: center;
 
     background: var(--base-color);
-    padding: 17.4rem 71rem;
+    padding: 17.4rem 10rem;
 }
 
 #about .about {
@@ -791,8 +821,6 @@ header nav ul li .instagram {
     background: #000;
 }
 
-
-
 /* BACK TO TOP */
 
 .back-to-top {
@@ -822,6 +850,13 @@ header nav ul li .instagram {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+}
+
+.back-to-top:hover {
+    /* color: #000; */
+    transform: scale(1.1);
+    /* background-color: #fff; */
+
 }
 
 @media (max-width: 430px) {
@@ -1416,6 +1451,7 @@ header nav ul li .instagram {
             width: 30rem;
         }
 
+        
 
     
         /* ... Mais ajustes de tamanho de texto, layout e elementos para telas menores, se necessário */
