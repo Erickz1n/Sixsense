@@ -133,7 +133,6 @@ header nav ul li .instagram {
     }
 }
 
-
 /* .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -853,9 +852,9 @@ header nav ul li .instagram {
 }
 
 .back-to-top:hover {
-    /* color: #000; */
+    color: #000;
     transform: scale(1.1);
-    /* background-color: #fff; */
+    background-color: #fff;
 
 }
 
@@ -1048,7 +1047,6 @@ header nav ul li .instagram {
     #home {
         padding: 1rem 0;
         overflow: hidden;
-
     }
 
     #home .text h1 {
@@ -1335,6 +1333,7 @@ header nav ul li .instagram {
     
         font-size: 2.5rem;
         font-weight: 700;
+        width: 12rem;
     }
     
     #portifolio .line {
