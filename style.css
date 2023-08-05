@@ -565,7 +565,7 @@ header nav ul li .instagram:hover {
     right: auto;
     bottom: 0;
 
-    font-size: 2rem;
+    font-size: 6rem;
     line-height: 25rem;
     width: 4rem;
 
@@ -642,7 +642,7 @@ header nav ul li .instagram:hover {
     left: 0;
     right: auto;
     bottom: 0;
-    font-size: 2rem;
+    font-size: 6rem;
     line-height: 25rem;
     width: 4rem;
     text-align: center;
@@ -717,7 +717,7 @@ header nav ul li .instagram:hover {
     left: 0;
     right: auto;
     bottom: 0;
-    font-size: 2rem;
+    font-size: 6rem;
     line-height: 25rem;
     width: 4rem;
     text-align: center;
@@ -1305,6 +1305,7 @@ header nav ul li .instagram:hover {
     #method img {
         height: 30rem;
         width: 30rem;
+        position: relative;
     }
 
     #method .method-wrapper .method-text {
@@ -1441,11 +1442,11 @@ header nav ul li .instagram:hover {
         }
         
         
-        #about .mac img{
+        #about .mac img {
             width: 30rem;
         }
 
-        #about .text {
+        #about .text{
             align-items: center; /* Centralizar o texto */
             width: 30rem;
         }
@@ -1457,6 +1458,10 @@ header nav ul li .instagram:hover {
         #about .text p {
             font-size: 1.5rem;
             width: 30rem;
+        }
+
+        .item-1, .item-2, .item-3 {
+            opacity: 1;
         }
         /* ... Mais ajustes de tamanho de texto, layout e elementos para telas menores, se necessário */
 }
