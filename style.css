@@ -54,6 +54,14 @@ header {
     animation: top-down .3s ease-in;
 }
 
+nav .logo {
+    width: 15rem;
+}
+
+nav ul li .nav {
+    position: relative;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -66,7 +74,6 @@ header nav ul{
     display: flex;
     gap: 2rem;
     list-style: none;
-    
 }
 
 header nav ul li .nav{
@@ -77,13 +84,6 @@ header nav ul li .nav{
     transition: color .3s;
 }
 
-nav .logo {
-    width: 15rem;
-}
-
-nav ul li .nav {
-    position: relative;
-}
 
 header nav ul li .nav.active {
     color: hsl(104, 100%, 50%);
@@ -119,6 +119,12 @@ header nav ul li .instagram {
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
+
+    transition: background-color .2s ease-in-out;
+}
+
+header nav ul li .instagram:hover {
+    background-color: #fff;
 }
 
 @keyframes top-down{
