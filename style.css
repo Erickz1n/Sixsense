@@ -962,11 +962,6 @@ header nav ul li .instagram {
         margin-top: 1rem;
     }
 
-
-    .section {
-        /* height: 70rem; */
-    }
-    
     .icon-menu, .icon-close {
         font-size: 3rem;
     }
@@ -987,8 +982,6 @@ header nav ul li .instagram {
     }
 
     header nav .logo{
-        /* display: flex; */
-        /* flex-direction: row; */
         justify-content: start;
         width: 15rem;
     }
@@ -998,11 +991,11 @@ header nav ul li .instagram {
     }
 
     header nav ul li .nav{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     header nav ul li .instagram{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #home {
