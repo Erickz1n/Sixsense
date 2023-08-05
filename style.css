@@ -75,7 +75,9 @@ header nav ul li .nav.active {
     color: hsl(104, 100%, 50%);
 }
 
-
+.icon-menu, .icon-close {
+    display: none;
+}
 
 header nav ul li .nav::after {
     content: '';
@@ -608,7 +610,7 @@ header nav ul li .instagram {
     left: 0;
     right: auto;
     bottom: 0;
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 25rem;
     width: 4rem;
     text-align: center;
@@ -685,7 +687,7 @@ header nav ul li .instagram {
     bottom: 0;
     font-size: 4rem;
     line-height: 25rem;
-    width: 4rem;
+    width: 2rem;
     text-align: center;
     color: #fff;
     cursor: pointer;
@@ -825,10 +827,13 @@ header nav ul li .instagram {
 @media (max-width: 430px) {
     /* HEADER E NAV */
 
-    .back-to-top {
-        padding: 1rem;
-        font-size: 3rem;
+
+    html, body {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
     }
+
+
 
     .section{
         height: 50rem;
@@ -963,6 +968,13 @@ header nav ul li .instagram {
     }
 
     .icon-menu, .icon-close {
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .back-to-top {
+        padding: 1rem;
         font-size: 3rem;
     }
 
@@ -1403,7 +1415,6 @@ header nav ul li .instagram {
             font-size: 1.5rem;
             width: 30rem;
         }
-
 
 
     
