@@ -63,9 +63,10 @@ nav ul li .nav {
 }
 
 header nav {
+    width: 120rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 20rem;
+    padding: 1rem 10rem;
     align-items: center;
     gap: 4rem;
 }
@@ -1455,10 +1456,6 @@ header nav ul li .instagram:hover {
             font-size: 1.5rem;
             width: 30rem;
         }
-
-        
-
-    
         /* ... Mais ajustes de tamanho de texto, layout e elementos para telas menores, se necessário */
 }
 
