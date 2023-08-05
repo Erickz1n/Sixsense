@@ -1123,16 +1123,13 @@ header nav ul li .instagram {
     }
     
     #services {
-        /* background: url(./assets/third-background.png) no-repeat top center/cover;  */
-    }
-    
-    #services {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 5.4rem;
-        padding: 0;
+        padding: 6rem 0;
+        height: auto;
     }
     
     #services .text {
@@ -1141,6 +1138,7 @@ header nav ul li .instagram {
     
     #services .text h1 {
         font-size: 3rem;
+
     }
     
     #services .text p {
@@ -1168,9 +1166,6 @@ header nav ul li .instagram {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
-        /* height: 100rem; */
-        /* padding: 45rem 0; */
     }
 
     .section {
@@ -1415,6 +1410,7 @@ header nav ul li .instagram {
             font-size: 1.5rem;
             width: 30rem;
         }
+
 
 
     
