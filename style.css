@@ -40,8 +40,6 @@ html, body {
 
 /* HEADER E NAV */
 
-
-
 header {
     width: 100%;
     background-color: #000000;
@@ -146,11 +144,6 @@ header nav ul li .instagram:hover {
         transform: translateY(0);
     }
 }
-
-/* .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-} */
 
 /* SECTION HOME */
 
@@ -259,7 +252,6 @@ header nav ul li .instagram:hover {
     text-transform: uppercase;
     font-weight: 700;
     line-height: normal;
-
 
     margin-top: 3.2rem;
     background-color: var(--base-color);
@@ -453,8 +445,6 @@ header nav ul li .instagram:hover {
     margin-bottom: 5rem;
 }
 
-
-
 #method .method-wrapper .method-text {
     color: #fff;
     display: flex;
@@ -472,8 +462,6 @@ header nav ul li .instagram:hover {
     font-size: 1.4rem;
 }
 
-
-
 /* SECTION PORTIFOLIO */
 
 #portifolio {
@@ -485,14 +473,6 @@ header nav ul li .instagram:hover {
     justify-content: center;
 
     gap: 5rem;
-}
-
-#portifolio .client {
-    color: #fff;
-
-    font-size: 3rem;
-    font-weight: 700;
-    width: 130rem;
 }
 
 #portifolio .line {
@@ -524,6 +504,15 @@ header nav ul li .instagram:hover {
 
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+#portifolio .client {
+    color: #fff;
+
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 0 5rem;
 }
 
 
@@ -1352,7 +1341,6 @@ header nav ul li .instagram:hover {
     
         font-size: 2.5rem;
         font-weight: 700;
-        width: 12rem;
     }
     
     #portifolio .line {
