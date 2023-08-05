@@ -40,6 +40,8 @@ html, body {
 
 /* HEADER E NAV */
 
+
+
 header {
     width: 100%;
     background-color: #000000;
@@ -126,6 +128,11 @@ header nav ul li .instagram {
 
 header nav ul li .instagram:hover {
     background-color: #fff;
+}
+
+#header.scroll {
+    transition: .2s;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.152);
 }
 
 @keyframes top-down{
@@ -849,7 +856,7 @@ header nav ul li .instagram:hover {
     transition: 0.3s;
     transform: translateY(100%);
     text-decoration: none;
-
+    z-index: 2;
 }
 
 .back-to-top.show {
@@ -1049,6 +1056,11 @@ header nav ul li .instagram:hover {
 
     header nav ul li .instagram{
         font-size: 2rem;
+    }
+
+    #header.scroll {
+        transition: .2s;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.152);
     }
 
     #home {
@@ -1458,380 +1470,3 @@ header nav ul li .instagram:hover {
         }
         /* ... Mais ajustes de tamanho de texto, layout e elementos para telas menores, se necessário */
 }
-
-
-
-
-
-
-
-/* 
-@media (max-width: 380px) {
-
-    :root {
-
-    }
-
-    .section{
-        height: 50rem;
-    }
-    
-    .container{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header {
-        max-width: 380px;
-    }
-    header nav{
-        max-width: 3rem;
-    }
-    header nav {
-    }
-
-    #home .text h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-    
-    #home .text p {
-        font-size: 1.5rem;
-        font-weight: 400;
-    
-        margin-bottom: 6rem;
-    }
-
-    #home .text {
-        width: 34rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } 
-
-    #home .text .link a {
-        background: var(--base-color);
-        color: #000;
-        padding: 1.4rem 4.4rem;
-    
-        font-size: 1rem;
-        font-weight: 700;
-    
-        text-transform: uppercase;
-        width: 15rem;
-    }
-    
-    #home .text .link a:hover {
-        background: #fff;
-    }
-
-
-    #why {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-        max-width: 36rem;
-        gap: 3rem;
-        padding: 20rem 0;
-    }
-
-    #why .text {
-        width: 30rem;
-    }
-    
-    #why .arrow {
-        display: none;
-    }
-    
-    #why .text h1 {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-    
-    #why .text h1 span {
-        color: var(--base-color);
-    }
-    
-    #why .square  {
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-    
-    #why .square input {
-        font-family: 'Sora', sans-serif;
-    
-        font-size: 1rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    
-    #why .square {
-        width: 10.9rem;
-        height: 30rem;
-        padding: 1rem;
-    }
-    
-    #why input {
-        font-size: 1rem;
-        font-weight: 700;
-    
-        background-color: var(--base-color);
-        padding: 1.4rem 11.4rem ;
-        border: none;
-    
-        cursor: pointer;
-    
-        transition: all .2s ease-in-out;
-    }
-    
-    #why input:hover {
-        color: #fff;
-        background: #000;
-    }
-    
-
-
-
-    #services {
-        background: url(./assets/third-background.png) no-repeat top center/cover; 
-    }
-    
-    #services {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5.4rem;
-        max-width: 36rem;
-    }
-    
-    #services .text {
-        gap: 1.2rem;
-    }
-    
-    #services .text h1 {
-        font-size: 3rem;
-    }
-    
-    #services .text p {
-        font-size: 1.2rem;
-    }
-    
-    #services .cards-services {
-        display: flex;
-        flex-direction: column;
-
-        gap: 1rem;
-    }
-    
-    #services .cards-services .card{
-        transition: all .2s ease-in-out;
-    }
-    
-    #services .card {
-        padding: 1.2rem 5.8rem;
-        font-size: 1.2rem;
-    }
-
-    #public {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-        height: 80rem;
-    }
-    
-    #public h1 {
-        display: flex;
-        flex-direction: column;
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 2rem ;
-        width: 61.5rem;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #public h1 span {
-        color: var(--base-color);
-    }
-    
-    #public .clients {
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-        gap: 1rem;
-        margin-bottom: 4rem;
-        z-index: -1;
-    }
-    
-    .house, .bag, .wifi {
-        background-color: #000;
-        padding: .5rem 1rem;
-        display: none;
-    }
-    
-    .company, .entrepreneurs, .influencers {
-        display: flex;
-        flex-direction: column;
-        gap: 1.4rem;
-    
-        background: #000;
-        width: 24rem;
-        padding: 5rem 2.5rem;
-    }
-    
-    .clients h3 {
-        color: var(--base-color);
-        text-align: center;
-        font-size: 1.2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    
-    .clients p {
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    
-    #public a {
-        align-items: center;
-        justify-content: center;
-        padding: 1.4rem 4.4rem;
-    }
-
-    #method {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-        background: #000;
-        padding: 5rem 0;
-    }
-    
-    #method h1 {
-        color: #fff;
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-align: center;
-        width: 20rem;
-        margin-bottom: 5rem;
-    }
-
-    #method img {
-        height: 30rem;
-        width: 30rem;
-    }
-
-    #portifolio {
-        background: #000;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-        gap: 5rem;
-    }
-    
-    #portifolio .client {
-        color: #fff;
-    
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-    
-    #portifolio .line {
-        background: var(--base-color);
-    
-        height: .2rem;
-        width: 20rem;
-    
-        margin: 1rem;
-    }
-    
-    #portifolio .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        gap: 1rem;
-    }
-    
-    #portifolio .text h1 {
-        color: #fff;
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-    
-    #portifolio .text p {
-        color: #fff;
-    
-        font-size: 1rem;
-        font-weight: 400;
-    }
-
-    #portifolio a {
-        background: var(--base-color);
-        width: 24rem;
-        padding: 1.6rem 4.6rem;
-        font-size: 1.2rem;
-    }
-
-    #about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: var(--base-color);
-        max-width: 36rem;
-        padding: 17.4rem 71rem;
-    }
-    
-    #about .about {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    #about .text {
-        display: flex;
-        flex-direction: column;
-        gap: 3.1rem;
-    }
-    
-    #about h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        width: 45rem;
-    }
-    
-    #about p {
-        font-size: 1rem;
-        font-weight: 400;
-        width: 40rem;
-    }
-    
-    #about a {
-        color: #000;
-    
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: 700;
-        width: 24rem;
-        padding: 1.6rem 4.6rem ;
-    
-        background: #fff;
-        transition: all .2s ease-in-out;
-    }
-    
-    #about .mac{
-        width: 10rem;
-        height: 10rem;
-    }
-} */
