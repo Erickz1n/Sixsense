@@ -154,7 +154,6 @@ header nav ul li .instagram:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 10rem 40rem;
 }
 
 #home .text {
@@ -280,6 +279,7 @@ header nav ul li .instagram:hover {
     align-items: center;
     justify-content: center;
     gap: 5.4rem;
+    height: 58rem;
 }
 
 #services .text {
@@ -344,8 +344,7 @@ header nav ul li .instagram:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    height: 68rem;
+    height: 65rem;
 }
 
 #public h1 {
@@ -776,7 +775,7 @@ header nav ul li .instagram:hover {
     justify-content: center;
 
     background: var(--base-color);
-    padding: 17.4rem 10rem;
+    padding: 10rem 10rem;
 }
 
 #about .about {
@@ -1070,11 +1069,13 @@ header nav ul li .instagram:hover {
     }
 
     #home .text {
-        width: 30rem;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        margin-right: 2rem;
+        margin-left: 2rem;
     } 
 
     #home .text .link a {
@@ -1086,7 +1087,7 @@ header nav ul li .instagram:hover {
         font-weight: 700;
     
         text-transform: uppercase;
-        width: 15rem;
+        width: 100%;
     }
     
     #home .text .link a:hover {
@@ -1102,6 +1103,7 @@ header nav ul li .instagram:hover {
         
         gap: 3rem;
         padding: 30rem 0;
+        height: 70rem;
     }
 
     #why .text {
@@ -1123,12 +1125,15 @@ header nav ul li .instagram:hover {
     
     #why .square  {
         display: flex;
-        width: 35rem;
+        width: 100%;
         font-size: 1.5rem;
         font-weight: 400;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
+        padding: 4rem;
+        height: auto;
+        margin-right: 10rem;
+        margin-left: 10rem;
     }
     
     #why .square a {
@@ -1137,33 +1142,22 @@ header nav ul li .instagram:hover {
         font-size: 1.5rem;
         font-weight: 700;
         text-transform: uppercase;
-        
-    }
 
-    
-    #why .square {
-        /* width: 5rem; */
-        height: 40rem;
-        padding: 1rem;
-
-
-    }
-    
-    #why input {
         color: #000;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 700;
     
         background-color: var(--base-color);
-        padding: 1.4rem 11.4rem ;
+        padding: 1.4rem 8rem;
         border: none;
     
         cursor: pointer;
     
         transition: all .2s ease-in-out;
     }
-    
-    #why input:hover {
+
+
+    #why .square a:hover {
         color: #fff;
         background: #000;
     }
@@ -1298,20 +1292,25 @@ header nav ul li .instagram:hover {
         font-size: 3rem;
         font-weight: 700;
         text-align: center;
-        width: 30rem;
+        width: 100%;
         margin-bottom: 5rem;
     }
 
     #method img {
-        height: 30rem;
-        width: 30rem;
+        display: flex;
+        width: 100%;
         position: relative;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     #method .method-wrapper .method-text {
+        display: flex;
         color: #fff;
         display: flex;
         gap: 15rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     
     #method .method-wrapper {
