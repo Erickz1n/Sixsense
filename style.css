@@ -365,6 +365,10 @@ header nav ul li .instagram:hover {
     width: 61.5rem;
 }
 
+::selection {
+    background: var(--base-color);
+}
+
 #public h1 span {
     color: var(--base-color);
 }
@@ -879,7 +883,6 @@ header nav ul li .instagram:hover {
 
 }
 
-
 @media (max-width: 1200px) {
     
     #why {
@@ -960,11 +963,6 @@ header nav ul li .instagram:hover {
 
     .section{
         height: 50rem;
-    }
-    
-    .container{
-        margin-left: auto;
-        margin-right: auto;
     }
 
     main {
@@ -1104,7 +1102,7 @@ header nav ul li .instagram:hover {
         display: flex;
         align-items: center;
     }
-    
+
     nav.show div.icon-close {
         visibility: visible;
         opacity: 1;
@@ -1375,6 +1373,7 @@ header nav ul li .instagram:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: auto;
     
         background: #000;
         padding: 5rem 0;
@@ -1402,7 +1401,7 @@ header nav ul li .instagram:hover {
     #method .method-wrapper .method-text {
         color: #fff;
         display: flex;
-        gap: 15rem;
+        gap: 13rem;
     }
     
     #method .method-wrapper {
@@ -1411,7 +1410,7 @@ header nav ul li .instagram:hover {
         margin-top: 15rem;
         display: flex;
         flex-direction: column;
-        gap: 20rem;
+        gap: 25rem;
         position: absolute;
         font-size: 1.4rem;
     }
