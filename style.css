@@ -202,6 +202,16 @@ header nav ul li .instagram:hover {
     justify-content: center;
     
     gap: 14rem;
+    padding: 0 2rem;
+}
+
+#why .content-why {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 14rem;
+    width: 100%;
 }
 
 #why .text {
@@ -221,7 +231,7 @@ header nav ul li .instagram:hover {
     color: var(--base-color);
 }
 
-#why .square p{
+#why .square p {
     color: #000;
     font-size: clamp(1.2rem, 1vw, 1.4rem);
     font-weight: 400;
@@ -254,9 +264,10 @@ header nav ul li .instagram:hover {
 
     margin-top: 3.2rem;
     background-color: var(--base-color);
-    padding: 1.6rem 11.6rem ;
+    padding: 1.6rem;
     border: none;
-
+    text-align: center;
+    width: 100%;
     cursor: pointer;
 
     transition: all .2s ease-in-out;
@@ -769,14 +780,11 @@ header nav ul li .instagram:hover {
 /* SECTION ABOUT */
 
 #about {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
 
     background: var(--base-color);
     padding: 10rem 10rem;
-    /* width: 100%; */
+    width: 100%;
 }
 
 #about .about {
@@ -785,6 +793,14 @@ header nav ul li .instagram:hover {
     gap: 3.1rem;
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+#about .content-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 #about .text {
@@ -864,607 +880,77 @@ header nav ul li .instagram:hover {
 }
 
 
+@media (max-width: 1200px) {
+    
+    #why {
+        padding: 13rem 5rem;
+        height: auto;
+    }
+
+    #why .content-why {
+        gap: 4rem;
+        height: auto;
+
+    }
+
+    #why .square {
+        height: auto;
+
+    }
+    .method-text {
+        gap: 40rem;
+    }
+
+    #about .content-about, #about .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about .content-about .mac {
+        padding: 0 10rem;
+    }
+}
 
 @media (max-width: 768px) {
-    body {
-        max-width: 768px;
-    }
 
-    html, body {
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
-
-    .section{
-        height: 50rem;
-    }
-    
-    .container{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    main {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #header {
-        margin-bottom: 2rem;
-        display: flex;
-        align-items: center;
-    
-        width: 100%;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        background-color: var(--background-color-black);
-    }
-
-    #header.scroll {
-        transition: 0.2s;
-        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    nav.container {
-        padding: 2rem 1rem;
-    }
-
-    nav {
-        width: 100%;
-        height: var(--header-height);
-    
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    nav ul li {
-        text-align: center;
-    }
-
-    nav ul li a {
-        transition: 0.2s;
-        position: relative;
-    }
-
-    nav ul li a:hover, 
-    nav ul li a.active {
-        color: var(--base-color);
-    }
-
-    nav ul li a::after {
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: var(--base-color);
-
-        position: absolute;
-        left: 0;
-        bottom: -1.5rem;
-
-        transition: width 0.2s;
-    }
-
-    nav .menu {
-        opacity: 0;
-        visibility: hidden;
-        top: -20rem;
-        transition: 0.2s;
-    }
-
-    nav ul li a:hover::after,
-    nav ul li a.active::after {
-    width: 100%;
-    }
-    
-    nav .menu ul {
-        display: none;
-    }
-    
-    /* Mostrar menu */
-    nav.show .menu {
-        opacity: 1;
-        visibility: visible;
-    
-        background: var(--background-color-black);
-        height: 100vh;
-        width: 100vw;
-    
-        position: fixed;
-        top: 0;
-        left: 0;
-    
-        display: grid;
-        place-content: center;
-    }
-    
-    nav.show .menu ul {
-        display: grid;
-    }
-    
-    nav.show ul.grid {
-        gap: 4rem;
-    }
-
-    .toggle {
-        color: var(--base-color);
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-    
-    nav .icon-close {
-        visibility: visible;
-        opacity: 0;
-    
-        position: absolute;
-        top: -1.5rem;
-        right: 3rem;
-    
-        transition: 0.2s;
-        margin-top: 1rem;
-    }
-
-    .icon-menu, .icon-close {
-        font-size: 3rem;
-        display: flex;
-        align-items: center;
-    }
-
-    .back-to-top {
-        padding: 1rem;
-        font-size: 3rem;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-    }
-    
-    nav.show div.icon-close {
-        visibility: visible;
-        opacity: 1;
-        top: 1.5rem
-    }
-
-    header nav ul{
-        display: none;
-    }
-
-    header nav .logo{
-        justify-content: start;
-        width: 15rem;
-    }
-
-    header {
-        padding: 0 2rem;
-    }
-
-    header nav ul li .nav{
-        font-size: 2rem;
-    }
-
-    header nav ul li .instagram{
-        font-size: 2rem;
-    }
-
-    #header.scroll {
-        transition: .2s;
-        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.152);
-    }
-
-    #home {
-        padding: 1rem 0;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #home .text h1 {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-    
-    #home .text p {
-        font-size: 1.5rem;
-        font-weight: 400;
-    
-        margin-bottom: 6rem;
-    }
-
-    #home .text {
-        width: 35rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    } 
-
-    #home .text .link a {
-        background: var(--base-color);
-        color: #000;
-        padding: 1.4rem 4.4rem;
-    
-        font-size: 1rem;
-        font-weight: 700;
-    
-        text-transform: uppercase;
-        width: 100% ;
-    }
-    
-    #home .text .link a:hover {
-        background: #fff;
-    }
-
-
-    #why {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-        gap: 3rem;
-        padding: 28rem 0;
-    }
-
-    #why .text {
-        width: 30rem;
-    }
-    
-    #why .arrow {
-        display: none;
-    }
-    
-    #why .text h1 {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-    
-    #why .text h1 span {
-        color: var(--base-color);
-    }
-    
-    #why .square  {
-        display: flex;
-        width: 35rem;
-        height: auto;
-        font-size: 1.5rem;
-        font-weight: 400;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-    }
-    
-    #why .square a {
-        font-family: 'Sora', sans-serif;
-    
-        font-weight: 700;
-        text-transform: uppercase;
-        
-        color: #000;
-        font-size: 1.2rem;
-    
-        background-color: var(--base-color);
-        padding: 1.4rem 11.4rem ;
-        border: none;
-    
-        cursor: pointer;
-    
-        transition: all .2s ease-in-out;
-    }
-    
-    #why .square a:hover {
-        color: #fff;
-        background: #000;
-    }
-    
-    #services {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5.4rem;
-        padding: 6rem 0;
-        height: auto;
-    }
-    
-    #services .text {
-        gap: 1.2rem;
-    }
-    
-    #services .text h1 {
-        font-size: 3rem;
-    }
-    
-    #services .text p {
-        font-size: 1.5rem;
-    }
-    
-    #services .cards-services {
-        display: flex;
-        flex-direction: column;
-
-        gap: 1rem;
-    }
-    
-    #services .cards-services .card{
-        transition: all .2s ease-in-out;
-    }
-    
-    #services .card {
-        padding: 1.2rem 5.8rem;
-        font-size: 1.2rem;
-    }
-
-    #public {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section {
-        padding: 45rem 0;
-    }
-    
-    #public h1 {
-        display: flex;
-        flex-direction: column;
-        font-size: 3rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        width: 61.5rem;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #public h1 span {
-        color: var(--base-color);
-    }
-    
-    #public .clients {
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-        gap: 1rem;
-        margin-bottom: 4rem;
-        z-index: -1;
-    }
-    
-    .house, .bag, .wifi {
-        background-color: #000;
-        padding: .5rem 1rem;
-        display: none;
-    }
-    
-    .company, .entrepreneurs, .influencers {
-        display: flex;
-        flex-direction: column;
-        gap: 1.4rem;
-    
-        background: #000;
-        width: 30rem;
-        height: auto;
-        padding: 5rem 2.5rem;
-    }
-    
-    .clients h3 {
-        color: var(--base-color);
-        text-align: center;
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    
-    .clients p {
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-    
-    #public a {
-        align-items: center;
-        justify-content: center;
-        padding: 1.4rem 4.4rem;
-    }
-
-    #method {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-        background: #000;
-        padding: 5rem 0;
-    }
-
-    #method .method {
-        width: 20rem;
-    }
-    
-    #method h1 {
-        color: #fff;
-        font-size: 3rem;
-        font-weight: 700;
-        text-align: center;
-        width: 30rem;
-        margin-bottom: 5rem;
-    }
-
-    #method img {
-        height: 30rem;
-        width: 30rem;
-        position: relative;
+    #method .method-wrapper {
+        gap: 30rem;
     }
 
     #method .method-wrapper .method-text {
         color: #fff;
         display: flex;
-        gap: 15rem;
-    }
-    
-    #method .method-wrapper {
-        justify-content: center;
-        align-items: center;
-        margin-top: 15rem;
-        display: flex;
-        flex-direction: column;
-        gap: 20rem;
-        position: absolute;
-        font-size: 1.4rem;
+        gap: 25rem;
     }
 
-    #portifolio {
-        background: #000;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-        gap: 5rem;
-        padding: 2rem 0;
-    }
-    
-    #portifolio .client {
-        color: #fff;
-    
-        font-size: 2.5rem;
-        font-weight: 700;
-        padding: 0;
-        text-align: center;
-    }
-    
-    #portifolio .line {
-        background: var(--base-color);
-    
-        height: .2rem;
-        width: 20rem;
-    
-        margin: 3rem 0 1rem 0;
-    }
-    
-    #portifolio .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        gap: 1rem;
-    }
-    
-    #portifolio .text h1 {
-        color: #fff;
-        font-size: 3rem;
-        font-weight: 700;
-    }
-    
-    #portifolio .text p {
-        text-align: center;
+    #method .method {
         width: 30rem;
-        color: #fff;
-    
-        font-size: 1.5rem;
-        font-weight: 400;
+        display: flex;
     }
 
-    #portifolio a {
-        background: var(--base-color);
-        width: 24rem;
-        padding: 1.6rem 4.6rem;
-        font-size: 1.2rem;
-        margin-bottom: 3rem;
+    #public {
+        height: auto;
+        padding: 15rem 0;
     }
 
-        /* SLIDERS */
-        .container-swiper-1 .item-1,
-        .container-swiper-2 .item-2,
-        .container-swiper-3 .item-3 {
-          width: 30rem; /* Alterando o tamanho dos itens para preencher a largura do slider */
-          height: auto; /* Permitindo que a altura dos itens se ajuste automaticamente ao conteúdo */
-        }
-    
-        .arrow-left-1,
-        .arrow-right-1,
-        .arrow-left-2,
-        .arrow-right-2,
-        .arrow-left-3,
-        .arrow-right-3 {
-          font-size: 7rem; /* Reduzindo o tamanho das setas dos sliders */
-          line-height: 3rem; /* Ajustando a altura das setas para alinhar verticalmente */
-          width: 3rem; /* Reduzindo a largura das setas dos sliders */
-        }
-    
-        .arrow-left-1 {
-          left: 1rem; /* Ajustando a posição das setas esquerdas */
-        }
-    
-        .arrow-right-1 {
-          right: 1rem; /* Ajustando a posição das setas direitas */
-        }
-    
-        .arrow-left-2 {
-          left: 1rem; /* Ajustando a posição das setas esquerdas */
-        }
-    
-        .arrow-right-2 {
-          right: 1rem; /* Ajustando a posição das setas direitas */
-        }
-    
-        .arrow-left-3 {
-          left: 1rem; /* Ajustando a posição das setas esquerdas */
-        }
-    
-        .arrow-right-3 {
-          right: 1rem; /* Ajustando a posição das setas direitas */
-        }
-    
-        /* SECTION ABOUT */
-        #about {
-            flex-direction: column; /* Mudar para layout vertical */
-            align-items: center;
-            justify-content: center;
-            padding: 5rem; /* Reduzir o espaçamento para um layout mais compacto */
-        }
-        
-        #about .about {
-            text-align: center; /* Centralizar o texto */
-        }
-        
-        #about .mac img {
-            width: 100%;
-        }
+    #public .clients {
+        display: flex;
+        flex-direction: column;
+    }
 
-        #about .text{
-            align-items: center; /* Centralizar o texto */
-            width: 30rem;
-        }
+    #public .enterprise {
+        max-width: 100%;
+    }
 
-        #about .text h1 {
-            font-size: 3rem;
-        }
-
-        #about .text p {
-            font-size: 1.5rem;
-            width: 30rem;
-        }
-
-        .item-1, .item-2, .item-3 {
-            opacity: 1;
-        }
+    #public .icons {
+        display: none;
+    }
 
 }
 
-@media (max-width: 320px) {
-
-}
-
-
-
-@media (max-width: 430px) {
+@media (max-width: 600px) {
     /* HEADER E NAV */
 
     html, body {
@@ -1659,23 +1145,23 @@ header nav ul li .instagram:hover {
     #home .text h1 {
         font-size: 3rem;
         font-weight: 700;
+        max-width: 100%;
     }
     
     #home .text p {
         font-size: 1.5rem;
         font-weight: 400;
     
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
+        width: 100%;
     }
 
     #home .text {
-        width: 100%;
+        max-width: 40rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
     } 
 
     #home .text .link a {
@@ -1700,9 +1186,14 @@ header nav ul li .instagram:hover {
         align-items: center;
         justify-content: center;
         
-        gap: 3rem;
         padding: 6rem 2rem;
         height: auto;
+    }
+
+    #why .content-why {
+        flex-direction: column;
+        gap: 5rem;
+        max-width: 400px;
     }
 
     #why .text {
@@ -1716,6 +1207,8 @@ header nav ul li .instagram:hover {
     #why .text h1 {
         font-size: 3rem;
         font-weight: 700;
+        justify-content: none;
+        align-items: none;
     }
     
     #why .text h1 span {
@@ -1724,6 +1217,8 @@ header nav ul li .instagram:hover {
 
     #why .square {
         width: 100%;
+        height: auto;
+        padding: 2rem;
     }
     
     #why .square p {
@@ -1776,7 +1271,6 @@ header nav ul li .instagram:hover {
     
     #services .text h1 {
         font-size: 3rem;
-
     }
     
     #services .text p {
@@ -1805,8 +1299,9 @@ header nav ul li .instagram:hover {
         align-items: center;
         justify-content: center;
 
-        padding: 5rem 4rem;
+        padding: 5rem 15rem;
         height: auto;
+        gap: 1rem;
     }
 
     .section {
@@ -1821,7 +1316,7 @@ header nav ul li .instagram:hover {
         margin-bottom: 2rem ;
         width: 61.5rem;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
     }
     
     #public h1 span {
@@ -1835,7 +1330,6 @@ header nav ul li .instagram:hover {
         gap: 1rem;
         margin-bottom: 4rem;
         z-index: -1;
-
 
     }
     
@@ -1987,7 +1481,7 @@ header nav ul li .instagram:hover {
         .container-swiper-1 .item-1,
         .container-swiper-2 .item-2,
         .container-swiper-3 .item-3 {
-          width: 100%; /* Alterando o tamanho dos itens para preencher a largura do slider */
+          max-width: 40rem; /* Alterando o tamanho dos itens para preencher a largura do slider */
           height: auto; /* Permitindo que a altura dos itens se ajuste automaticamente ao conteúdo */
         }
     
@@ -2003,48 +1497,47 @@ header nav ul li .instagram:hover {
         }
     
         .arrow-left-1 {
-          left: 1rem; /* Ajustando a posição das setas esquerdas */
+            left: 1rem;
         }
     
         .arrow-right-1 {
-          right: 1rem; /* Ajustando a posição das setas direitas */
+            right: 1rem
         }
     
         .arrow-left-2 {
-          left: 1rem; /* Ajustando a posição das setas esquerdas */
+            left: 1rem;
         }
     
         .arrow-right-2 {
-          right: 1rem; /* Ajustando a posição das setas direitas */
+            right: 1rem
         }
     
         .arrow-left-3 {
-          left: 1rem; /* Ajustando a posição das setas esquerdas */
+            left: 1rem;
         }
     
         .arrow-right-3 {
-          right: 1rem; /* Ajustando a posição das setas direitas */
+            right: 1rem
         }
     
         /* SECTION ABOUT */
         #about {
-            flex-direction: column; /* Mudar para layout vertical */
+            flex-direction: column; 
             align-items: center;
             justify-content: center;
-            padding: 5rem; /* Reduzir o espaçamento para um layout mais compacto */
+            padding: 5rem;
         }
         
         #about .about {
-            text-align: center; /* Centralizar o texto */
+            text-align: center; 
         }
-        
         
         #about .mac img {
             width: 30rem;
         }
 
         #about .text{
-            align-items: center; /* Centralizar o texto */
+            align-items: center; 
             width: 30rem;
         }
 
@@ -2060,12 +1553,8 @@ header nav ul li .instagram:hover {
         .item-1, .item-2, .item-3 {
             opacity: 1;
         }
-        /* ... Mais ajustes de tamanho de texto, layout e elementos para telas menores, se necessário */
+
 }
 
 
-@media (max-width: 1024px) {
-    #why {
-        /* padding: 0 10rem; */
-    }
-}
+
