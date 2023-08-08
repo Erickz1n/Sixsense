@@ -127,9 +127,7 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(
     `#home .text, #home .link, #why .text, #why .square,
-    #services .text, #services .card, #public .text, #public h1, 
-    #public .icons, #public .clients, #public a, #method h1, #method .method, #method .method-wrapper,
-    #portifolio .line, #portifolio .text, #portifolio h1, .gallery-1, .gallery-2, .gallery-3, 
+    #services .text, #services .card, #public, #public a, #portifolio .line, #portifolio .text, #portifolio h1, .gallery-1, .gallery-2, .gallery-3, 
     #portifolio a, #about img , #about .text h1, #about .text p, #about .text a
     `,
     { interval: 100 }

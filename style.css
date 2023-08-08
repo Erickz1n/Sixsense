@@ -438,44 +438,6 @@ header nav ul li .instagram:hover {
     background: #000;
 }
 
-/*  SECTION METHOD */
-
-#method {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background: #000;
-    padding: 13.6rem 0;
-}
-
-#method h1 {
-    color: #fff;
-    font-size: 4.5rem;
-    font-weight: 700;
-    text-align: center;
-    
-    margin-bottom: 5rem;
-}
-
-#method .method-wrapper .method-text {
-    color: #fff;
-    display: flex;
-    gap: 40rem;
-}
-
-#method .method-wrapper {
-    justify-content: center;
-    align-items: center;
-    margin-top: 15rem;
-    display: flex;
-    flex-direction: column;
-    gap: 29rem;
-    position: absolute;
-    font-size: 1.4rem;
-}
-
 /* SECTION PORTIFOLIO */
 
 #portifolio {
@@ -900,9 +862,6 @@ header nav ul li .instagram:hover {
         height: auto;
 
     }
-    .method-text {
-        gap: 40rem;
-    }
 
     #about .content-about, #about .text{
         display: flex;
@@ -917,21 +876,6 @@ header nav ul li .instagram:hover {
 }
 
 @media (max-width: 768px) {
-
-    #method .method-wrapper {
-        gap: 30rem;
-    }
-
-    #method .method-wrapper .method-text {
-        color: #fff;
-        display: flex;
-        gap: 25rem;
-    }
-
-    #method .method {
-        width: 30rem;
-        display: flex;
-    }
 
     #public {
         height: auto;
@@ -1368,53 +1312,6 @@ header nav ul li .instagram:hover {
         padding: 1.4rem 4.4rem;
     }
 
-    #method {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-    
-        background: #000;
-        padding: 5rem 0;
-    }
-
-    #method .method {
-        width: 20rem;
-    }
-    
-    #method h1 {
-        color: #fff;
-        font-size: 3rem;
-        font-weight: 700;
-        text-align: center;
-        width: 30rem;
-        margin-bottom: 5rem;
-    }
-
-    #method img {
-        height: 30rem;
-        width: 30rem;
-        position: relative;
-    }
-
-    #method .method-wrapper .method-text {
-        color: #fff;
-        display: flex;
-        gap: 13rem;
-    }
-    
-    #method .method-wrapper {
-        justify-content: center;
-        align-items: center;
-        margin-top: 15rem;
-        display: flex;
-        flex-direction: column;
-        gap: 25rem;
-        position: absolute;
-        font-size: 1.4rem;
-    }
-
     #portifolio {
         background: #000;
         
@@ -1426,7 +1323,7 @@ header nav ul li .instagram:hover {
         gap: 5rem;
         padding: 2rem 0;
     }
-    
+
     #portifolio .client {
         color: #fff;
     
