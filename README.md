@@ -1,6 +1,3 @@
-<p align="center">
-<img src="./assets/preview.png" alt="Capa do projeto" width="100%" />
-</p>
 
 ## 🖥️ Projeto 
 Esse é um projeto Web Responsivo de Landing Page da Agência SixSense.
