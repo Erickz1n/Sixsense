@@ -127,7 +127,7 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(
     `#home .text, #home .link, #why .text, #why .square,
-    #services .text, #services .card, #public, #public a, #portifolio .line, #portifolio .text, #portifolio h1, .gallery-1, .gallery-2, .gallery-3, 
+    #services .text, #services .card, #public, #public a, #methodology .text, #methodology .breathing, #methodology .estrategy, #methodology .synthesis , #portifolio .line, #portifolio .text, #portifolio h1, .gallery-1, .gallery-2, .gallery-3, 
     #portifolio a, #about img , #about .text h1, #about .text p, #about .text a
     `,
     { interval: 100 }
@@ -228,6 +228,69 @@ for (const link of links) {
     })
 }
 
+function showMore () {
+    let maisTexto=document.getElementById("mais");
+    let leiaMais=document.getElementById("more");
+
+    if (maisTexto.style.display === "inline") {
+        maisTexto.style.display="none";
+        leiaMais.innerHTML="+"
+    } else {
+        maisTexto.style.display="inline";
+        leiaMais.innerHTML="-"
+    }
+}
+
+function showMoreTwo () {
+    let maisTextoTwo=document.getElementById("maisTwo");
+    let leiaMaisTwo=document.getElementById("moreTwo");
+
+    if (maisTextoTwo.style.display === "inline") {
+        maisTextoTwo.style.display="none";
+        leiaMaisTwo.innerHTML="+"
+    } else {
+        maisTextoTwo.style.display="inline";
+        leiaMaisTwo.innerHTML="-"
+    }
+}
+
+function showMoreThree () {
+    let maisTextoThree=document.getElementById("maisThree");
+    let leiaMaisThree=document.getElementById("moreThree");
+
+    if (maisTextoThree.style.display === "inline") {
+        maisTextoThree.style.display="none";
+        leiaMaisThree.innerHTML="+"
+    } else {
+        maisTextoThree.style.display="inline";
+        leiaMaisThree.innerHTML="-"
+    }
+}
+
+
+/* 
+function toggleMode() {
+    const html = document.documentElement
+    html.classList.toggle('light')
+
+    //pegar a tag img
+    const img = document.querySelector("#profile img")
+
+    //substituir a imagem
+
+    if(html.classList.contains('light')) {
+        //se tiver light mode, adicionar a imagem light
+        img.setAttribute('src', './assets/avatar-light.jpg')
+        img.setAttribute('alt', 'Foto de Erick Marcos de óculos com cabelo tamanho médio em um lugar com led roxo')
+    } else {
+        //se tiver sem light mode, manter a imagem normal
+        img.setAttribute('src', './assets/avatar.jpg')
+        img.setAttribute('alt', 'Foto de Erick Marcos sério, usando camisa social azul, de oculos e fundo roxo')
+    }
+
+}
+
+*/
 
     
     window.addEventListener('scroll', function () {

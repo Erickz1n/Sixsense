@@ -156,6 +156,12 @@ header nav ul li .instagram:hover {
     text-align: center;
 }
 
+/*---------------------------*/
+
+
+
+/*---------------------------*/
+
 #home .text {
     width: 48rem;
     display: flex;
@@ -437,6 +443,82 @@ header nav ul li .instagram:hover {
     color: #fff;
     background: #000;
 }
+
+/* SECTION METHODOLOGY */
+
+#mais, #maisTwo, #maisThree {
+    display: none
+}
+
+#methodology {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    height: auto;
+    padding: 10rem 0;
+}
+
+.content-bt {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#methodology .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#methodology .button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#methodology .button p {
+    font-size: 3rem;
+    color: #fff;
+}
+
+#methodology .text {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+.breathing, .estrategy, .synthesis {
+    padding: 1rem 0 0 0;
+    border-top: .3rem solid hsl(var(--hue), 100%, 50%);
+    width: 70rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.breathing span, .estrategy span, .synthesis span{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#methodology .showmore {
+    font-size: 3rem;
+    color: var(--base-color);
+    background-color: #000;
+    border: none;
+    width: 2rem;
+    display: flex;
+    gap: 53rem;
+    font-family: 'Sora', sans-serif;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+
 
 /* SECTION PORTIFOLIO */
 
