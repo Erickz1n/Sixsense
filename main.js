@@ -130,7 +130,7 @@ scrollReveal.reveal(
     #services .text, #services .card, #public, #public a, #methodology .text, #methodology .breathing, #methodology .estrategy, #methodology .synthesis , #portifolio .line, #portifolio .text, #portifolio h1, .gallery-1, .gallery-2, .gallery-3, 
     #portifolio a, #about img , #about .text h1, #about .text p, #about .text a
     `,
-    { interval: 100 }
+    { interval: 65 }
     )
 
 
@@ -266,31 +266,6 @@ function showMoreThree () {
         leiaMaisThree.innerHTML="-"
     }
 }
-
-
-/* 
-function toggleMode() {
-    const html = document.documentElement
-    html.classList.toggle('light')
-
-    //pegar a tag img
-    const img = document.querySelector("#profile img")
-
-    //substituir a imagem
-
-    if(html.classList.contains('light')) {
-        //se tiver light mode, adicionar a imagem light
-        img.setAttribute('src', './assets/avatar-light.jpg')
-        img.setAttribute('alt', 'Foto de Erick Marcos de óculos com cabelo tamanho médio em um lugar com led roxo')
-    } else {
-        //se tiver sem light mode, manter a imagem normal
-        img.setAttribute('src', './assets/avatar.jpg')
-        img.setAttribute('alt', 'Foto de Erick Marcos sério, usando camisa social azul, de oculos e fundo roxo')
-    }
-
-}
-
-*/
 
     
     window.addEventListener('scroll', function () {
