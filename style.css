@@ -6,6 +6,59 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+#splash {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    animation: splash .2s 6s forwards;
+}
+
+.intro {
+    display: flex;
+    inset: 0;
+    width: 30rem;
+    height: 30rem;
+    z-index: 1000;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+
+    animation: intro .2s 5s ease forwards;
+}
+
+@keyframes splash {
+    0% {
+        z-index: 1000;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1000;
+    }
+}
+
+@keyframes intro {
+    0% {
+        opacity: 1;
+        z-index: 10000;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+        position: none;
+    }
+}
+
+
 :root {
     font-size: 62.5%;
 
@@ -1684,57 +1737,34 @@ header nav ul li .instagram:hover {
             opacity: 1;
         }
 
-}
+        #splash {
+            background-color: #000;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            animation: splash .2s 6s forwards;
+        }
+        
+        .intro {
+            display: flex;
+            inset: 0;
+            width: 20rem;
+            height: 20rem;
+            z-index: 1000;
+            opacity: 1;
+            justify-content: center;
+            align-items: center;
+        
+            animation: intro .2s 5s ease forwards;
+        }
+        
 
-#splash {
-    background-color: #000;
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    z-index: 10000;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    animation: splash .2s 6s forwards;
-}
-
-.intro {
-    display: flex;
-    inset: 0;
-    width: 30rem;
-    height: 30rem;
-    z-index: 1000;
-    opacity: 1;
-    justify-content: center;
-    align-items: center;
-
-    animation: intro .2s 5s ease forwards;
-}
-
-@keyframes splash {
-    0% {
-        z-index: 1000;
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        z-index: -1000;
-    }
-}
-
-@keyframes intro {
-    0% {
-        opacity: 1;
-        z-index: 10000;
-    }
-
-    100% {
-        opacity: 0;
-        z-index: -1;
-        position: none;
-    }
 }
 
 /* #app {
