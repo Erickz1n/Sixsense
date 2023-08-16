@@ -9,7 +9,7 @@
 :root {
     font-size: 62.5%;
 
-    --hue: 104;
+    --hue: 120;
 
     --base-color: hsl(var(--hue), 100%, 50%);
     --background-color-black: hsl(0, 0%, 0%) ;
@@ -89,7 +89,7 @@ header nav ul li .nav{
 
 
 header nav ul li .nav.active {
-    color: hsl(104, 100%, 50%);
+    color: hsl(120, 100%, 50%);
 }
 
 .icon-menu, .icon-close {
@@ -546,7 +546,6 @@ header nav ul li .instagram:hover {
     background: #000;
     
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -554,28 +553,39 @@ header nav ul li .instagram:hover {
     padding: 12rem 0;
 }
 
-#portifolio .line {
+#portifolio .content-portifolio {
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+}
+
+/* #portifolio .line {
     background: var(--base-color);
 
     height: .6rem;
     width: 29.7rem;
 
     margin-bottom: 6rem;
-}
+} */
 
 #portifolio .text {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     gap: 1.2rem;
     margin-top: 1.6rem;
+    gap: 3.1rem;
 }
+
 
 #portifolio .text h1 {
     color: #fff;
     font-size: 4.5rem;
     font-weight: 700;
+}
+
+#portifolio .text h1 span{
+    color: var(--base-color);
 }
 
 #portifolio .text p {
@@ -597,11 +607,10 @@ header nav ul li .instagram:hover {
 #portifolio a {
     color: #000;
     text-decoration: none;
-    background: var(--base-color);
+    background: #fff;
 
     width: 24rem;
     padding: 1.6rem 4.6rem;
-    /* margin-bottom: 16rem; */
 
     font-size: 1.2rem;
     font-weight: 700;
@@ -611,12 +620,17 @@ header nav ul li .instagram:hover {
 }
 
 #portifolio a:hover {
-    background: #fff;
+    color: #fff;
+    background: #0057ff;
+}
+
+#portifolio .image {
+    width: 50rem;
 }
 
 /* SLIDER 1 */
 
-.container-swiper-1 {
+/* .container-swiper-1 {
     position: relative;
     padding: 1.5rem;
     max-width: 100%;
@@ -690,11 +704,11 @@ header nav ul li .instagram:hover {
     -ms-overflow-style: none;
 
     scrollbar-width: none;
-}
+} */
 
 /* SLIDER 2 */
 
-.container-swiper-2 {
+/* .container-swiper-2 {
     position: relative;
     padding: 1.5rem;
     max-width: 100%;
@@ -765,11 +779,11 @@ header nav ul li .instagram:hover {
     -ms-overflow-style: none;
 
     scrollbar-width: none;
-}
+} */
 
 /* SLIDER 3 */
 
-.container-swiper-3 {
+/* .container-swiper-3 {
     position: relative;
     padding: 1.5rem;
     max-width: 100%;
@@ -840,7 +854,7 @@ header nav ul li .instagram:hover {
     -ms-overflow-style: none;
 
     scrollbar-width: none;
-}
+} */
 
 /* SECTION ABOUT */
 
@@ -972,7 +986,11 @@ header nav ul li .instagram:hover {
     }
 
     #portifolio {
-        padding: 10 0rem;
+        padding: 10rem 5rem;
+    }
+
+    #portifolio .image {
+        width: 35rem;
     }
 }
 
@@ -1064,6 +1082,83 @@ header nav ul li .instagram:hover {
         align-items: center;
         cursor: pointer;
     }
+
+    
+#portifolio {
+    background: #000;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5rem;
+    padding: 12rem 0;
+}
+
+#portifolio .content-portifolio {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #portifolio .line {
+    background: var(--base-color);
+
+    height: .6rem;
+    width: 29.7rem;
+
+    margin-bottom: 6rem;
+} */
+
+#portifolio .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1.6rem;
+    gap: 3.1rem;
+}
+
+#portifolio .text h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#portifolio .text h1 span{
+    color: var(--base-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#portifolio a {
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+
+    width: 24rem;
+    padding: 1.6rem 4.6rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition: all .2s ease-in-out;
+}
+
+#portifolio .image {
+    width: 30rem;
+}
+
+#portifolio a:hover {
+    background: #0057ff;
+}
 
 }
 
@@ -1546,7 +1641,7 @@ header nav ul li .instagram:hover {
         cursor: pointer;
     }
 
-    #portifolio {
+    /* #portifolio {
         background: #000;
         
         display: flex;
@@ -1605,7 +1700,7 @@ header nav ul li .instagram:hover {
         padding: 1.6rem 4.6rem;
         font-size: 1.2rem;
         margin-bottom: 3rem;
-    }
+    } */
 
         /* SLIDERS */
         .container-swiper-1 .item-1,
@@ -1626,7 +1721,7 @@ header nav ul li .instagram:hover {
           width: 3rem; /* Reduzindo a largura das setas dos sliders */
         }
     
-        .arrow-left-1 {
+        /* .arrow-left-1 {
             left: 1rem;
         }
     
@@ -1649,7 +1744,82 @@ header nav ul li .instagram:hover {
         .arrow-right-3 {
             right: 1rem
         }
-    
+     */
+        
+
+        /* SECTION PORTIFOLIO*/
+
+        #portifolio .content-portifolio {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #portifolio .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 1.6rem;
+            gap: 3.1rem;
+        }
+
+
+        #portifolio .text h1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        #portifolio .text h1 span{
+            color: var(--base-color);
+        }
+
+        #portifolio .text p {
+            color: #fff;
+
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        #portifolio .client {
+            color: #fff;
+
+            font-size: 3rem;
+            font-weight: 700;
+            width: 100%;
+            padding: 0 5rem;
+        }
+
+        #portifolio a {
+            color: #000;
+            text-decoration: none;
+            background: #fff;
+
+            width: 24rem;
+            padding: 1.6rem 4.6rem;
+            /* margin-bottom: 16rem; */
+
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            transition: all .2s ease-in-out;
+        }
+
+        #portifolio a:hover {
+            background: #0057ff;
+        }
+                
+
+
         /* SECTION ABOUT */
         #about {
             flex-direction: column; 

@@ -1,120 +1,120 @@
-const controls1 = document.querySelectorAll(".control-1");
+// const controls1 = document.querySelectorAll(".control-1");
 
-let currentItem1 = 0;
-const items1 = document.querySelectorAll(".item-1");
+// let currentItem1 = 0;
+// const items1 = document.querySelectorAll(".item-1");
 
-const maxItems1 = items1.length;
+// const maxItems1 = items1.length;
 
-controls1.forEach(control1 => {
-    control1.addEventListener("click", () => {
-        const isLeft1 = control1.classList.contains("arrow-left-1");
+// controls1.forEach(control1 => {
+//     control1.addEventListener("click", () => {
+//         const isLeft1 = control1.classList.contains("arrow-left-1");
 
-        if (isLeft1) {
-            currentItem1 -= 1;
-        } else {
-            currentItem1 += 1;
-        }
+//         if (isLeft1) {
+//             currentItem1 -= 1;
+//         } else {
+//             currentItem1 += 1;
+//         }
 
-        if (currentItem1 >= maxItems1) {
-            currentItem1 = 0;
-        }
+//         if (currentItem1 >= maxItems1) {
+//             currentItem1 = 0;
+//         }
 
-        if (currentItem1 < 0) {
-            currentItem1 = maxItems1 - 1;
-        }
+//         if (currentItem1 < 0) {
+//             currentItem1 = maxItems1 - 1;
+//         }
 
 
-        items1.forEach(item1 => item1.classList.remove('current-item-1'));
+//         items1.forEach(item1 => item1.classList.remove('current-item-1'));
 
-    items1[currentItem1].scrollIntoView({
-            inLine: "center",
-            behavior: "smooth",
-            block: "nearest",
-        });
+//     items1[currentItem1].scrollIntoView({
+//             inLine: "center",
+//             behavior: "smooth",
+//             block: "nearest",
+//         });
 
-        items1[currentItem1].classList.add('current-item-1')
-    });
-});
+//         items1[currentItem1].classList.add('current-item-1')
+//     });
+// });
 
 /* SLIDER 2 */
 
-const controls2 = document.querySelectorAll(".control-2");
+// const controls2 = document.querySelectorAll(".control-2");
 
-let currentItem2 = 0;
-const items2 = document.querySelectorAll(".item-2");
+// let currentItem2 = 0;
+// const items2 = document.querySelectorAll(".item-2");
 
-const maxItems2 = items2.length;
+// const maxItems2 = items2.length;
 
-controls2.forEach(control2 => {
-    control2.addEventListener("click", () => {
-        const isLeft2 = control2.classList.contains("arrow-left-2");
+// controls2.forEach(control2 => {
+//     control2.addEventListener("click", () => {
+//         const isLeft2 = control2.classList.contains("arrow-left-2");
 
-        if (isLeft2) {
-            currentItem2 -= 1;
-        } else {
-            currentItem2 += 1;
-        }
+//         if (isLeft2) {
+//             currentItem2 -= 1;
+//         } else {
+//             currentItem2 += 1;
+//         }
 
-        if (currentItem2 >= maxItems2) {
-            currentItem2 = 0;
-        }
+//         if (currentItem2 >= maxItems2) {
+//             currentItem2 = 0;
+//         }
 
-        if (currentItem2 < 0) {
-            currentItem2 = maxItems2 - 1;
-        }
+//         if (currentItem2 < 0) {
+//             currentItem2 = maxItems2 - 1;
+//         }
 
 
-        items2.forEach(item2 => item2.classList.remove('current-item-2'));
+//         items2.forEach(item2 => item2.classList.remove('current-item-2'));
 
-    items2[currentItem2].scrollIntoView({
-            inLine: "center",
-            behavior: "smooth",
-            block: "nearest",
-        });
+//     items2[currentItem2].scrollIntoView({
+//             inLine: "center",
+//             behavior: "smooth",
+//             block: "nearest",
+//         });
 
-        items2[currentItem2].classList.add('current-item-2')
-    });
-});
+//         items2[currentItem2].classList.add('current-item-2')
+//     });
+// });
 
 /* SLIDER 3 */
 
-const controls3 = document.querySelectorAll(".control-3");
+// const controls3 = document.querySelectorAll(".control-3");
 
-let currentItem3 = 0;
-const items3 = document.querySelectorAll(".item-3");
+// let currentItem3 = 0;
+// const items3 = document.querySelectorAll(".item-3");
 
-const maxItems3 = items3.length;
+// const maxItems3 = items3.length;
 
-controls3.forEach(control3 => {
-    control3.addEventListener("click", () => {
-        const isLeft3= control3.classList.contains("arrow-left-3");
+// controls3.forEach(control3 => {
+//     control3.addEventListener("click", () => {
+//         const isLeft3= control3.classList.contains("arrow-left-3");
 
-        if (isLeft3) {
-            currentItem3 -= 1;
-        } else {
-            currentItem3 += 1;
-        }
+//         if (isLeft3) {
+//             currentItem3 -= 1;
+//         } else {
+//             currentItem3 += 1;
+//         }
 
-        if (currentItem3 >= maxItems3) {
-            currentItem3 = 0;
-        }
+//         if (currentItem3 >= maxItems3) {
+//             currentItem3 = 0;
+//         }
 
-        if (currentItem3 < 0) {
-            currentItem3 = maxItems3 - 1;
-        }
+//         if (currentItem3 < 0) {
+//             currentItem3 = maxItems3 - 1;
+//         }
 
 
-        items3.forEach(item3 => item3.classList.remove('current-item-3'));
+//         items3.forEach(item3 => item3.classList.remove('current-item-3'));
 
-    items3[currentItem3].scrollIntoView({
-            inLine: "center",
-            behavior: "smooth",
-            block: "nearest",
-        });
+//     items3[currentItem3].scrollIntoView({
+//             inLine: "center",
+//             behavior: "smooth",
+//             block: "nearest",
+//         });
 
-        items3[currentItem3].classList.add('current-item-3')
-    });
-});
+//         items3[currentItem3].classList.add('current-item-3')
+//     });
+// });
 
 /* MENU ATIVO */
 

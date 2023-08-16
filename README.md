@@ -1,6 +1,6 @@
 
 ## 🖥️ Projeto 
-Esse é um projeto Web Responsivo de Landing Page da Agência SixSense.
+Esse é um projeto Web Responsivo de Landing Page da Agência [SixSense](https://www.instagram.com/agenciasixsense/).
 
 ## 🖌️ Web Desginer
 Web Designer responsável pelo projeto do Figma:
