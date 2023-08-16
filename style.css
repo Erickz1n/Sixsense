@@ -918,6 +918,10 @@ header nav ul li .instagram:hover {
     background: #000;
 }
 
+#about .image {
+    width: 70rem;
+}
+
 /* BACK TO TOP */
 
 .back-to-top {
