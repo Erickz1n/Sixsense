@@ -13,6 +13,7 @@
 
     --base-color: hsl(var(--hue), 100%, 50%);
     --background-color-black: hsl(0, 0%, 0%) ;
+    --surface-color: rgba(33, 33, 33, 0.1);
 
     font-family: 'Sora', sans-serif;
 }
@@ -43,7 +44,9 @@ html, body {
 
 header {
     width: 100%;
-    background-color: #000000;
+    background-color: var(--surface-color);
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(2.4rem);
     position: fixed;
     opacity: 0;
 
@@ -151,7 +154,7 @@ header nav ul li .instagram:hover {
 
 #home {
     color: #ffffff;
-    background-color: #000000;
+    background: url(./assets/bg-hero-desk.svg) no-repeat top center/cover;
 
     display: flex;
     justify-content: center;
@@ -189,6 +192,7 @@ header nav ul li .instagram:hover {
     font-size: 1.2rem;
     font-weight: 700;
 
+    text-decoration: none;
     text-transform: uppercase;
     width: 24rem;
     cursor: pointer;
@@ -219,13 +223,14 @@ header nav ul li .instagram:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #e5e5e5;
     
     gap: 14rem;
     padding: 0 2rem;
     animation: bg .0s .1s ease forwards;
 }
 
-@keyframes bg {
+/* @keyframes bg {
     0% {
         background: #000;
     }
@@ -233,7 +238,7 @@ header nav ul li .instagram:hover {
     100% {
         background: #fff;
     }
-}
+} */
 
 #why .content-why {
     display: flex;
@@ -398,6 +403,7 @@ header nav ul li .instagram:hover {
     align-items: center;
     justify-content: center;
     height: 65rem;
+    background-color: #e5e5e5;
 }
 
 #public h1 {
@@ -1203,7 +1209,9 @@ header nav ul li .instagram:hover {
         z-index: 100;
         top: 0;
         left: 0;
-        background-color: var(--background-color-black);
+        background-color: var(--surface-color);
+        backdrop-filter: blur(0.4rem);
+        -webkit-backdrop-filter: blur(2.4rem);
     }
 
     #header.scroll {
@@ -1324,6 +1332,7 @@ header nav ul li .instagram:hover {
     header {
         display: flex;
         align-items: center;
+
     }
 
     nav.show div.icon-close {

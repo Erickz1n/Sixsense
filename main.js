@@ -267,6 +267,28 @@ function showMoreThree () {
     }
 }
 
+// CONTRASTE HEADER
+
+// window.addEventListener('scroll', function() {
+//     const header = document.querySelector('header');
+//     const section = document.querySelector('section');
+    
+//     const headerBackgroundColor = window.getComputedStyle(header).backgroundColor;
+//     const sectionBackgroundColor = window.getComputedStyle(section).backgroundColor;
+    
+//     if (isColorSimilar(headerBackgroundColor, sectionBackgroundColor)) {
+//       header.style.color = '#000'; // Altere a cor do texto do header para um contraste adequado
+//     } else {
+//       header.style.color = '#fff'; // Volte para a cor original do texto do header
+//     }
+//   });
+  
+//   function isColorSimilar(color1, color2) {
+//     // Lógica para verificar a similaridade de cores, por exemplo, a diferença nas componentes de cor
+//     // Se a diferença for pequena, considere as cores como "similares"
+//     return true; // Modifique isso com a lógica real de verificação de similaridade
+//   }
+
     
     window.addEventListener('scroll', function () {
         changeHeaderWhenScroll()
