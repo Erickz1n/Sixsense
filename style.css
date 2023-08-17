@@ -9,11 +9,10 @@
 :root {
     font-size: 62.5%;
 
-    --hue: 120;
 
-    --base-color: hsl(var(--hue), 100%, 50%);
-    --background-color-black: hsl(0, 0%, 0%) ;
-    --surface-color: rgba(33, 33, 33, 0.1);
+    --base-color: #00ff00;
+    --background-color-black: #000000 ;
+    --surface-color: #2121211a;
 
     font-family: 'Sora', sans-serif;
 }
@@ -92,7 +91,7 @@ header nav ul li .nav{
 
 
 header nav ul li .nav.active {
-    color: hsl(120, 100%, 50%);
+    color: #00ff00;
 }
 
 .icon-menu, .icon-close {
@@ -286,9 +285,9 @@ header nav ul li .instagram:hover {
     display: flex;
     flex-direction: column;
     width: 40.9rem;
-    height: 40.9rem;
+    height: auto;
     padding: 5rem;
-    border: 1px solid hsla(0, 0%, 0%, 0.259);
+    border: 1px solid #00000042;
 } 
 
 #why a {
