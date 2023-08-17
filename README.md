@@ -10,7 +10,7 @@ Web Designer responsável pelo projeto do Figma:
 ## 💻 Front-end Developers
 Desenvolvedores Web responsáveis pelo código:
 
-[Vitor Cândido](https://github.com/VitorIII), 
+[Vitor Cândido](https://github.com/VitorIII)<br>
 [Erick Marcos](https://github.com/Erickz1n)
 
 ## 🚀 Teconologias
