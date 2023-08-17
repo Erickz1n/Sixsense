@@ -361,8 +361,9 @@ header nav ul li .instagram:hover {
 #services .card {
     padding: 1.8rem 6.2rem;
     background: var(--base-color);
-    
-    font-size: 14px;
+    /* width: 28.4rem; */
+    height: 6.8rem;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -375,6 +376,14 @@ header nav ul li .instagram:hover {
     transition: all .2s ease-in-out;
     
 }
+
+/* #services .cards-services .five {
+    gap: 1.1rem;
+}
+
+#services .cards-services .six {
+    gap: 1.8rem;
+} */
 
 #services .cards-services .card:hover {
     background: #fff;
@@ -542,7 +551,7 @@ header nav ul li .instagram:hover {
 
 /* SECTION PORTIFOLIO */
 
-#portifolio {
+#portfolio {
     background: #000;
     
     display: flex;
@@ -553,7 +562,7 @@ header nav ul li .instagram:hover {
     padding: 12rem 0;
 }
 
-#portifolio .content-portifolio {
+#portfolio .content-portfolio {
     display: flex;
     gap: 15rem;
     align-items: center;
@@ -568,7 +577,7 @@ header nav ul li .instagram:hover {
     margin-bottom: 6rem;
 } */
 
-#portifolio .text {
+#portfolio .text {
     display: flex;
     flex-direction: column;
 
@@ -578,24 +587,24 @@ header nav ul li .instagram:hover {
 }
 
 
-#portifolio .text h1 {
+#portfolio .text h1 {
     color: #fff;
     font-size: 4.5rem;
     font-weight: 700;
 }
 
-#portifolio .text h1 span{
+#portfolio .text h1 span{
     color: var(--base-color);
 }
 
-#portifolio .text p {
+#portfolio .text p {
     color: #fff;
 
     font-size: 1.4rem;
     font-weight: 400;
 }
 
-#portifolio .client {
+#portfolio .client {
     color: #fff;
 
     font-size: 3rem;
@@ -604,7 +613,7 @@ header nav ul li .instagram:hover {
     padding: 0 5rem;
 }
 
-#portifolio a {
+#portfolio a {
     color: #000;
     text-decoration: none;
     background: #fff;
@@ -619,12 +628,12 @@ header nav ul li .instagram:hover {
     transition: all .2s ease-in-out;
 }
 
-#portifolio a:hover {
+#portfolio a:hover {
     color: #fff;
     background: #0057ff;
 }
 
-#portifolio .image {
+#portfolio .image {
     width: 50rem;
 }
 
@@ -989,11 +998,11 @@ header nav ul li .instagram:hover {
         padding: 0 10rem;
     }
 
-    #portifolio {
+    #portfolio {
         padding: 10rem 5rem;
     }
 
-    #portifolio .image {
+    #portfolio .image {
         width: 35rem;
     }
 }
@@ -1088,7 +1097,7 @@ header nav ul li .instagram:hover {
     }
 
     
-#portifolio {
+#portfolio {
     background: #000;
     
     display: flex;
@@ -1099,7 +1108,7 @@ header nav ul li .instagram:hover {
     padding: 12rem 0;
 }
 
-#portifolio .content-portifolio {
+#portfolio .content-portifolio {
     display: flex;
     flex-direction: row;
     gap: 5rem;
@@ -1116,7 +1125,7 @@ header nav ul li .instagram:hover {
     margin-bottom: 6rem;
 } */
 
-#portifolio .text {
+#portfolio .text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1125,7 +1134,7 @@ header nav ul li .instagram:hover {
     gap: 3.1rem;
 }
 
-#portifolio .text h1 {
+#portfolio .text h1 {
     color: #fff;
     font-size: 3rem;
     font-weight: 700;
@@ -1134,14 +1143,14 @@ header nav ul li .instagram:hover {
     justify-content: center;
 }
 
-#portifolio .text h1 span{
+#portfolio .text h1 span{
     color: var(--base-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#portifolio a {
+#portfolio a {
     color: #000;
     text-decoration: none;
     background: #fff;
@@ -1156,11 +1165,11 @@ header nav ul li .instagram:hover {
     transition: all .2s ease-in-out;
 }
 
-#portifolio .image {
+#portfolio .image {
     width: 30rem;
 }
 
-#portifolio a:hover {
+#portfolio a:hover {
     background: #0057ff;
 }
 
@@ -1753,7 +1762,7 @@ header nav ul li .instagram:hover {
 
         /* SECTION PORTIFOLIO*/
 
-        #portifolio .content-portifolio {
+        #portfolio .content-portfolio {
             display: flex;
             flex-direction: column;
             gap: 5rem;
@@ -1761,7 +1770,7 @@ header nav ul li .instagram:hover {
             justify-content: center;
         }
 
-            #portifolio .text {
+            #portfolio .text {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1772,7 +1781,7 @@ header nav ul li .instagram:hover {
         }
 
 
-        #portifolio .text h1 {
+        #portfolio .text h1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1782,18 +1791,18 @@ header nav ul li .instagram:hover {
             font-weight: 700;
         }
 
-        #portifolio .text h1 span{
+        #portfolio .text h1 span{
             color: var(--base-color);
         }
 
-        #portifolio .text p {
+        #portfolio .text p {
             color: #fff;
 
             font-size: 1.4rem;
             font-weight: 400;
         }
 
-        #portifolio .client {
+        #portfolio .client {
             color: #fff;
 
             font-size: 3rem;
@@ -1802,7 +1811,7 @@ header nav ul li .instagram:hover {
             padding: 0 5rem;
         }
 
-        #portifolio a {
+        #portfolio a {
             color: #000;
             text-decoration: none;
             background: #fff;
@@ -1818,7 +1827,7 @@ header nav ul li .instagram:hover {
             transition: all .2s ease-in-out;
         }
 
-        #portifolio a:hover {
+        #portfolio a:hover {
             background: #0057ff;
         }
                 
