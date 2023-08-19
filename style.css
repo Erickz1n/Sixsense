@@ -9,10 +9,15 @@
 :root {
     font-size: 62.5%;
 
+    --hue: 120;
 
-    --base-color: #00ff00;
-    --background-color-black: #000000 ;
-    --surface-color: #2121211a;
+    --base-color: hsl(var(--hue), 100%, 50%);
+    --background-color-black: hsl(0, 0%, 0%) ;
+    --background-color-white: hsl(0, 0%, 100%);
+    --background-color-section-white: hsl(0, 0%, 90%);
+    --surface-color: hsla(0, 0%, 13%, 0.102);
+    --font-color-white: hsl(0, 0%, 100%);
+    --font-color-black: hsl(0, 0%, 0%);
 
     font-family: 'Sora', sans-serif;
 }
@@ -83,7 +88,7 @@ header nav ul{
 
 header nav ul li .nav{
     font-size: 1.2rem;
-    color: #ffffff;
+    color: var(--font-color-white);
     text-decoration: none;
     
     transition: color .3s;
@@ -117,7 +122,7 @@ nav ul li .nav.active::after{
 }
 
 header nav ul li .instagram {
-    color: #000;
+    color: var(--font-color-black);
     padding: .5rem 2rem;
     background: var(--base-color);
 
@@ -152,7 +157,7 @@ header nav ul li .instagram:hover {
 /* SECTION HOME */
 
 #home {
-    color: #ffffff;
+    color: var(--font-color-white);
     background: url(./assets/bg-hero-desk.svg) no-repeat top center/cover;
 
     display: flex;
@@ -185,7 +190,7 @@ header nav ul li .instagram:hover {
 
 #home .text .link a {
     background: var(--base-color);
-    color: #000;
+    color: var(--font-color-black);
     padding: 1.6rem 4.6rem;
 
     font-size: 1.2rem;
@@ -203,7 +208,7 @@ header nav ul li .instagram:hover {
 }
 
 #home .text .link a:hover {
-    background: #fff;
+    background: var(--background-color-white);
 }
 
 @keyframes opacity {
@@ -222,7 +227,7 @@ header nav ul li .instagram:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e5e5e5;
+    background-color: var(--background-color-section-white);
     
     gap: 14rem;
     padding: 0 2rem;
@@ -268,7 +273,7 @@ header nav ul li .instagram:hover {
 }
 
 #why .square p {
-    color: #000;
+    color: var(--font-color-black);
     font-size: clamp(1.2rem, 1vw, 1.4rem);
     font-weight: 400;
 }
@@ -291,7 +296,7 @@ header nav ul li .instagram:hover {
 } 
 
 #why a {
-    color: #000;
+    color: var(--font-color-black);
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -310,8 +315,8 @@ header nav ul li .instagram:hover {
 }
 
 #why a:hover {
-    color: #fff;
-    background: #000;
+    color: var(--font-color-white);
+    background: var(--background-color-black);
 }
 
 /* SECTION SERVICES */
@@ -334,7 +339,7 @@ header nav ul li .instagram:hover {
     flex-direction: column;
     align-items: center;
 
-    color: #fff;
+    color: var(--font-color-white);
     gap: 1.2rem;
 }
 
@@ -391,7 +396,7 @@ header nav ul li .instagram:hover {
 } */
 
 #services .cards-services .card:hover {
-    background: #fff;
+    background: var(--background-color-white);
 }
 
 /* SECTION PUBLIC */
@@ -402,7 +407,7 @@ header nav ul li .instagram:hover {
     align-items: center;
     justify-content: center;
     height: 65rem;
-    background-color: #e5e5e5;
+    background-color: var(--background-color-section-white);
 }
 
 #public h1 {
@@ -422,7 +427,7 @@ header nav ul li .instagram:hover {
 
 #public .clients {
     display: flex;
-    color: #fff;
+    color: var(--font-color-white);
     gap: 2.4rem;
     margin-bottom: 4rem;
     z-index: -1;
@@ -436,7 +441,7 @@ header nav ul li .instagram:hover {
 }
 
 .house, .bag, .wifi {
-    background-color: #000;
+    background-color: var(--background-color-black);
     padding: .9rem 1.5rem;
 }
 
@@ -445,7 +450,7 @@ header nav ul li .instagram:hover {
     flex-direction: column;
     gap: 1.4rem;
 
-    background: #000;
+    background: var(--background-color-black);
     width: 27rem;
     padding: 5.8rem 3.1rem;
 }
@@ -475,14 +480,14 @@ header nav ul li .instagram:hover {
     text-transform: uppercase;
     text-decoration: none;
 
-    color: #000;
+    color: var(--font-color-black);
 
     transition: all .2s ease-in-out;
 }
 
 #public a:hover {
-    color: #fff;
-    background: #000;
+    color: var(--font-color-white);
+    background: var(--background-color-black);
 }
 
 /* SECTION METHODOLOGY */
@@ -494,7 +499,7 @@ header nav ul li .instagram:hover {
 #methodology {
     display: flex;
     justify-content: center;
-    background-color: #000000;
+    background-color: var(--background-color-black);
     height: auto;
     padding: 10rem 0;
 }
@@ -519,12 +524,12 @@ header nav ul li .instagram:hover {
 
 #methodology .button p {
     font-size: 3rem;
-    color: #fff;
+    color: var(--font-color-white);
 }
 
 #methodology .text {
     font-size: 3rem;
-    color: #fff;
+    color: var(--font-color-white);
     text-align: center;
 }
 
@@ -538,14 +543,14 @@ header nav ul li .instagram:hover {
 }
 
 .breathing span, .estrategy span, .synthesis span{
-    color: #fff;
+    color: var(--font-color-white);
     font-size: 1.5rem;
 }
 
 #methodology .showmore {
     font-size: 3rem;
     color: var(--base-color);
-    background-color: #000;
+    background-color: var(--background-color-black);
     border: none;
     width: 2rem;
     display: flex;
@@ -558,7 +563,7 @@ header nav ul li .instagram:hover {
 /* SECTION PORTIFOLIO */
 
 #portfolio {
-    background: #000;
+    background: var(--background-color-black);
     
     display: flex;
     align-items: center;
@@ -594,7 +599,7 @@ header nav ul li .instagram:hover {
 
 
 #portfolio .text h1 {
-    color: #fff;
+    color: var(--font-color-white);
     font-size: 4.5rem;
     font-weight: 700;
 }
@@ -604,14 +609,14 @@ header nav ul li .instagram:hover {
 }
 
 #portfolio .text p {
-    color: #fff;
+    color: var(--font-color-white);
 
     font-size: 1.4rem;
     font-weight: 400;
 }
 
 #portfolio .client {
-    color: #fff;
+    color: var(--font-color-white);
 
     font-size: 3rem;
     font-weight: 700;
@@ -620,9 +625,9 @@ header nav ul li .instagram:hover {
 }
 
 #portfolio a {
-    color: #000;
+    color: var(--font-color-black);
     text-decoration: none;
-    background: #fff;
+    background:var(--background-color-white);
 
     width: 24rem;
     padding: 1.6rem 4.6rem;
@@ -635,7 +640,7 @@ header nav ul li .instagram:hover {
 }
 
 #portfolio a:hover {
-    color: #fff;
+    color: var(--font-color-white);
     background: #0057ff;
 }
 
@@ -914,7 +919,7 @@ header nav ul li .instagram:hover {
 }
 
 #about a {
-    color: #000;
+    color: var(--font-color-black);
 
     text-decoration: none;
     font-size: 1.2rem;
@@ -924,13 +929,13 @@ header nav ul li .instagram:hover {
     width: 24rem;
     padding: 1.6rem 4.6rem ;
 
-    background: #fff;
+    background: var(--background-color-white);
     transition: all .2s ease-in-out;
 }
 
 #about a:hover {
-    color: #fff;
-    background: #000;
+    color: var(--font-color-white);
+    background: var(--background-color-black);
 }
 
 #about .image {
@@ -941,7 +946,7 @@ header nav ul li .instagram:hover {
 
 .back-to-top {
     background-color: var(--base-color);
-    color: #000;
+    color: var(--font-color-black);
 
     position: fixed; 
     right: 2rem;
@@ -969,9 +974,9 @@ header nav ul li .instagram:hover {
 }
 
 .back-to-top:hover {
-    color: #000;
+    color: var(--font-color-black);
     transform: scale(1.1);
-    background-color: #fff;
+    background-color: var(--background-color-white);
 
 }
 
@@ -1041,7 +1046,7 @@ header nav ul li .instagram:hover {
     #methodology {
         display: flex;
         justify-content: center;
-        background-color: #000000;
+        background-color: var(--background-color-black);
         height: auto;
         padding: 10rem 0;
     }
@@ -1070,12 +1075,12 @@ header nav ul li .instagram:hover {
     
     #methodology .button p {
         font-size: 2.5rem;
-        color: #fff;
+        color: var(--font-color-white);
     }
     
     #methodology .content-bt .text h1 {
         font-size: 3rem;
-        color: #fff;
+        color: var(--font-color-white);
         text-align: center;
     }
 
@@ -1085,14 +1090,14 @@ header nav ul li .instagram:hover {
     }
     
     .breathing span, .estrategy span, .synthesis span{
-        color: #fff;
+        color: var(--font-color-white);
         font-size: 1.5rem;
     }
     
     #methodology .showmore {
         font-size: 3rem;
         color: var(--base-color);
-        background-color: #000;
+        background-color: var(--background-color-black);
         border: none;
         width: 2rem;
         display: flex;
@@ -1104,7 +1109,7 @@ header nav ul li .instagram:hover {
 
     
 #portfolio {
-    background: #000;
+    background: var(--background-color-black);
     
     display: flex;
     align-items: center;
@@ -1141,7 +1146,7 @@ header nav ul li .instagram:hover {
 }
 
 #portfolio .text h1 {
-    color: #fff;
+    color: var(--font-color-white);
     font-size: 3rem;
     font-weight: 700;
     display: flex;
@@ -1157,9 +1162,9 @@ header nav ul li .instagram:hover {
 }
 
 #portfolio a {
-    color: #000;
+    color: var(--font-color-black);
     text-decoration: none;
-    background: #fff;
+    background: var(--background-color-white);
 
     width: 24rem;
     padding: 1.6rem 4.6rem;
@@ -1395,7 +1400,7 @@ header nav ul li .instagram:hover {
 
     #home .text .link a {
         background: var(--base-color);
-        color: #000;
+        color: var(--font-color-black);
         padding: 1.4rem 4.4rem;
     
         font-size: 1rem;
@@ -1406,7 +1411,7 @@ header nav ul li .instagram:hover {
     }
     
     #home .text .link a:hover {
-        background: #fff;
+        background: var(--font-color-white);
     }
 
     #why {
@@ -1465,7 +1470,7 @@ header nav ul li .instagram:hover {
         font-weight: 700;
         text-transform: uppercase;
         
-        color: #000;
+        color: var(--font-color-black);
         font-size: 1.2rem;
     
         background-color: var(--base-color);
@@ -1480,8 +1485,8 @@ header nav ul li .instagram:hover {
     }
     
     #why .square a:hover {
-        color: #fff;
-        background: #000;
+        color: var(--font-color-white);
+        background: var(--background-color-black);
     }
     
     #services {
@@ -1555,7 +1560,7 @@ header nav ul li .instagram:hover {
     #public .clients {
         display: flex;
         flex-direction: column;
-        color: #fff;
+        color: var(--font-color-white);
         gap: 1rem;
         margin-bottom: 4rem;
         z-index: -1;
@@ -1563,7 +1568,7 @@ header nav ul li .instagram:hover {
     }
     
     .house, .bag, .wifi {
-        background-color: #000;
+        background-color: var(--background-color-black);
         padding: .5rem 1rem;
         display: none;
     }
@@ -1573,7 +1578,7 @@ header nav ul li .instagram:hover {
         flex-direction: column;
         gap: 1.4rem;
     
-        background: #000;
+        background: var(--background-color-black);
         width: 100%;
         height: auto;
         padding: 5rem 2.5rem;
@@ -1602,7 +1607,7 @@ header nav ul li .instagram:hover {
     #methodology {
         display: flex;
         justify-content: center;
-        background-color: #000000;
+        background-color: var(--background-color-black);
         height: auto;
         padding: 4rem 0;
     }
@@ -1631,12 +1636,12 @@ header nav ul li .instagram:hover {
     
     #methodology .button p {
         font-size: 2.5rem;
-        color: #fff;
+        color:var(--font-color-white);
     }
     
     #methodology .content-bt .text h1 {
         font-size: 3rem;
-        color: #fff;
+        color: var(--font-color-white);
         text-align: center;
     }
 
@@ -1646,14 +1651,14 @@ header nav ul li .instagram:hover {
     }
     
     .breathing span, .estrategy span, .synthesis span{
-        color: #fff;
+        color: var(--font-color-white);
         font-size: 1.5rem;
     }
     
     #methodology .showmore {
         font-size: 3rem;
         color: var(--base-color);
-        background-color: #000;
+        background-color: var(--background-color-black);
         border: none;
         width: 2rem;
         display: flex;
@@ -1795,7 +1800,7 @@ header nav ul li .instagram:hover {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #fff;
+            color: var(--font-color-white);
             font-size: 3rem;
             font-weight: 700;
         }
@@ -1805,14 +1810,14 @@ header nav ul li .instagram:hover {
         }
 
         #portfolio .text p {
-            color: #fff;
+            color: var(--font-color-white);
 
             font-size: 1.4rem;
             font-weight: 400;
         }
 
         #portfolio .client {
-            color: #fff;
+            color:var(--font-color-white);
 
             font-size: 3rem;
             font-weight: 700;
@@ -1821,9 +1826,9 @@ header nav ul li .instagram:hover {
         }
 
         #portfolio a {
-            color: #000;
+            color: var(--font-color-black);
             text-decoration: none;
-            background: #fff;
+            background: var(--background-color-white);
 
             width: 24rem;
             padding: 1.6rem 4.6rem;
@@ -1877,7 +1882,7 @@ header nav ul li .instagram:hover {
         }
 
         #splash {
-            background-color: #000;
+            background-color: var(--background-color-black);
             width: 100%;
             height: 100%;
             inset: 0;
@@ -1907,7 +1912,7 @@ header nav ul li .instagram:hover {
 }
 
 #splash {
-    background-color: #000;
+    background-color: var(--background-color-black);
     width: 100%;
     height: 100%;
     inset: 0;
@@ -1971,4 +1976,14 @@ header nav ul li .instagram:hover {
     }
 }
 
+.dark-theme {
+    --hue: 120;
 
+    --base-color: hsl(var(--hue), 100%, 50%);
+    --background-color-black: hsl(0, 0%, 0%) ;
+    --background-color-white: hsl(0, 0%, 100%);
+    --background-color-section-white: hsl(0, 0%, 90%);
+    --surface-color: hsla(0, 0%, 13%, 0.102);
+    --font-color-white: hsl(0, 0%, 100%);
+    --font-color-black: hsl(0, 0%, 0%);
+}

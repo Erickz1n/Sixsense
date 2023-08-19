@@ -122,7 +122,7 @@ const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '40px',
     duration: 700,
-    reset: true
+    // reset: true
 })
 
 scrollReveal.reveal(
@@ -266,6 +266,30 @@ function showMoreThree () {
         leiaMaisThree.innerHTML="-"
     }
 }
+
+//CORRIGINDO CORES NO CELULAR
+
+// Verifica se o usuário prefere o tema escuro
+function isDarkModePreferred() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+  // Aplica o tema de acordo com a preferência de cores
+function applyTheme() {
+    const body = document.body;
+    if (isDarkModePreferred()) {
+      body.classList.add('dark-theme'); // Adicione uma classe CSS para o tema escuro
+    } else {
+      body.classList.remove('dark-theme'); // Remova a classe CSS do tema escuro, se estiver presente
+    }
+}
+
+// Chama a função para aplicar o tema quando a página carrega
+applyTheme();
+
+// Escuta por mudanças na preferência de cores do usuário
+window.matchMedia('(prefers-color-scheme: dark)').addListener(applyTheme);
+
 
 // CONTRASTE HEADER
 
