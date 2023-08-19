@@ -22,6 +22,9 @@
     font-family: 'Sora', sans-serif;
 }
 
+
+
+
 ::-webkit-scrollbar {
     width: .8rem;
 }
@@ -1019,6 +1022,17 @@ header nav ul li .instagram:hover {
 }
 
 @media (max-width: 768px) {
+    .dark-theme {
+        --hue: 120;
+    
+        --base-color: hsl(var(--hue), 100%, 50%);
+        --background-color-black: hsl(0, 0%, 0%) ;
+        --background-color-white: hsl(0, 0%, 100%);
+        --background-color-section-white: hsl(0, 0%, 90%);
+        --surface-color: hsla(0, 0%, 13%, 0.102);
+        --font-color-white: hsl(0, 0%, 100%);
+        --font-color-black: hsl(0, 0%, 0%);
+    }
 
     #why {
         height: auto;
@@ -1188,6 +1202,17 @@ header nav ul li .instagram:hover {
 
 @media (max-width: 600px) {
     /* HEADER E NAV */
+    .dark-theme {
+        --hue: 120;
+    
+        --base-color: hsl(var(--hue), 100%, 50%);
+        --background-color-black: hsl(0, 0%, 0%) ;
+        --background-color-white: hsl(0, 0%, 100%);
+        --background-color-section-white: hsl(0, 0%, 90%);
+        --surface-color: hsla(0, 0%, 13%, 0.102);
+        --font-color-white: hsl(0, 0%, 100%);
+        --font-color-black: hsl(0, 0%, 0%);
+    }
 
     html, body {
         overflow-x: hidden;
@@ -1976,14 +2001,3 @@ header nav ul li .instagram:hover {
     }
 }
 
-.dark-theme {
-    --hue: 120;
-
-    --base-color: hsl(var(--hue), 100%, 50%);
-    --background-color-black: hsl(0, 0%, 0%) ;
-    --background-color-white: hsl(0, 0%, 100%);
-    --background-color-section-white: hsl(0, 0%, 90%);
-    --surface-color: hsla(0, 0%, 13%, 0.102);
-    --font-color-white: hsl(0, 0%, 100%);
-    --font-color-black: hsl(0, 0%, 0%);
-}
