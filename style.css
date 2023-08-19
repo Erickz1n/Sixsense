@@ -2001,3 +2001,16 @@ header nav ul li .instagram:hover {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --hue: 120;
+
+        --base-color: hsl(var(--hue), 100%, 50%);
+        --background-color-black: hsl(0, 0%, 0%) ;
+        --background-color-white: hsl(0, 0%, 100%);
+        --background-color-section-white: hsl(0, 0%, 90%);
+        --surface-color: hsla(0, 0%, 13%, 0.102);
+        --font-color-white: hsl(0, 0%, 100%);
+        --font-color-black: hsl(0, 0%, 0%);
+    }
+}
